@@ -112,12 +112,3 @@ The agent prints its thinking and tool calls. If something goes wrong:
 3. Increase `--max-turns` if it stops too early
 4. Try using Opus for more complex reasoning
 
-## Philosophy
-
-This agent is intentionally simple. Instead of encoding complex rules about every possible document format, we:
-
-1. Give Claude the context it needs
-2. Let it reason about patterns
-3. Trust it to figure out the mapping
-
-If it doesn't work perfectly the first time, iterate. The agent's output is a starting point, not necessarily the final answer.
