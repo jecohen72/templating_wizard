@@ -87,22 +87,6 @@ The agent is given three tools and a system prompt. It figures out the rest:
 5. **Generates** a Node.js script using `docx-js`
 6. **Runs** the script to create the template
 
-## Example Patterns It Recognizes
-
-| Document Content | Template Replacement |
-|------------------|---------------------|
-| "Project Name v1.2.0" | `{project.name} {version.name}` |
-| Table with 50 defect rows | `{#defects}...{/defects}` loop |
-| "DEFECT-123" | `{docId}` |
-| "69 issues" | `{defects \| count} issue(s)` |
-| Related requirement IDs | `{relations \| where:'type == "implements"' \| map:'other.docId'}` |
-
-## Limitations
-
-- Binary content (images, embedded objects) may need manual handling
-- Very complex nested tables might need iteration
-- The agent makes educated guesses; review output for accuracy
-
 ## Debugging
 
 The agent prints its thinking and tool calls. If something goes wrong:
