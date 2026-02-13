@@ -1,0 +1,1017 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "purpose": "Complete syntax reference for Ketryx document templating system",
+    "notes": [
+      "This is the static reference (Data Model 2) that complements dynamic project data (Data Model 1)",
+      "Based on docxtemplater with Angular expression syntax",
+      "Tags are enclosed in {curly braces}",
+      "Rich text rendering uses ~~ prefix",
+      "Raw XML output uses @ prefix"
+    ]
+  },
+
+  "tagSyntax": {
+    "description": "Basic tag syntax patterns",
+    "patterns": {
+      "simpleValue": {
+        "syntax": "{variableName}",
+        "description": "Output a simple value as plain text",
+        "example": "{project.name}"
+      },
+      "richText": {
+        "syntax": "{~~variableName}",
+        "description": "Output rich text (HTML) content, rendered in Word",
+        "example": "{~~fieldContent.Description}"
+      },
+      "rawXml": {
+        "syntax": "{@variableName}",
+        "description": "Output raw Word XML (advanced)",
+        "example": "{@toc}"
+      },
+      "loop": {
+        "syntax": "{#arrayName}...{/arrayName}",
+        "description": "Loop over array items",
+        "example": "{#items}{title}{/items}"
+      },
+      "conditionalSection": {
+        "syntax": "{#condition}...{/condition}",
+        "description": "Conditional section (renders if truthy)",
+        "example": "{#isControlled}Controlled{/isControlled}"
+      },
+      "invertedSection": {
+        "syntax": "{^condition}...{/condition}",
+        "description": "Inverted conditional (renders if falsy)",
+        "example": "{^isControlled}Not Controlled{/isControlled}"
+      },
+      "tableRowLoop": {
+        "syntax": "{#items}...{/items} (in table row)",
+        "description": "When loop tags span a table row, each iteration creates a new row",
+        "example": "| {#items}{title} | {status}{/items} |"
+      }
+    }
+  },
+
+  "specialCommands": {
+    "description": "Special command tags for data loading and assignment",
+    
+    "$KQL": {
+      "syntax": "$KQL [varName] = [kqlQuery]",
+      "description": "Execute a KQL query and assign results to a variable",
+      "variants": [
+        {
+          "syntax": "{$KQL items = type:Requirement}",
+          "description": "Query all Requirements into 'items' variable"
+        },
+        {
+          "syntax": "{$KQL @version:$PREVIOUS items = type:Requirement}",
+          "description": "Query from previous released version"
+        },
+        {
+          "syntax": "{$KQL @version:V1.0 items = type:Requirement}",
+          "description": "Query from specific version by name"
+        },
+        {
+          "syntax": "{$KQL @version:(V1.0,V2.0) items = type:Requirement}",
+          "description": "Query from multiple versions (results combined)"
+        }
+      ],
+      "notes": [
+        "Results are ItemRecordFullTemplateData objects",
+        "Query is executed asynchronously",
+        "Use quotes for types with spaces: type:\"Test Case\"",
+        "Can combine with KQL filters: type:Requirement state:Approved"
+      ]
+    },
+
+    "$TRACE": {
+      "syntax": "$TRACE [varName] : [configName]",
+      "description": "Load traceability matrix data",
+      "variants": [
+        {
+          "syntax": "{$TRACE rtm}",
+          "description": "Load default RTM configuration"
+        },
+        {
+          "syntax": "{$TRACE rtm : CustomRTM}",
+          "description": "Load named RTM configuration"
+        },
+        {
+          "syntax": "{$TRACE @version:$PREVIOUS rtm}",
+          "description": "Load RTM from previous version"
+        }
+      ],
+      "resultStructure": {
+        "rows": "Array of expanded rows (one row per cell combination)",
+        "groupedRows": "Array of grouped rows (multiple items per cell)",
+        "isFulfilled": "Boolean indicating if RTM is fully green",
+        "checks": "Array of traceability check results"
+      },
+      "rowStructure": {
+        "columns": {
+          "[columnId]": {
+            "itemRecord": "ItemRecordFullTemplateData or null",
+            "testStatus": "TestStatusTemplateData or null"
+          }
+        },
+        "version": "VersionTemplateData or null"
+      }
+    },
+
+    "$SET": {
+      "syntax": "$SET [varName] = [expression]",
+      "description": "Evaluate an expression and assign to variable",
+      "examples": [
+        "{$SET filteredItems = items | where:'status == \"Approved\"'}",
+        "{$SET itemCount = items | count}",
+        "{$SET firstItem = items | at:0}"
+      ],
+      "notes": [
+        "Useful for pre-computing values used multiple times",
+        "Can await async values (like $KQL results)",
+        "Variable is available in subsequent template sections"
+      ]
+    },
+
+    "$DOC": {
+      "syntax": "$DOC [path]",
+      "description": "Include a document from the EDMS Templates folder",
+      "examples": [
+        "{$DOC Header.docx}",
+        "{$DOC Sections/$sectionName.docx}"
+      ],
+      "notes": [
+        "Path is relative to Templates folder in EDMS",
+        "Supports $variable interpolation in path",
+        "Included document is NOT rendered as template (literal content)"
+      ]
+    },
+
+    "$RELEASEDOC": {
+      "syntax": "$RELEASEDOC [path]",
+      "description": "Include a generated or uploaded release document",
+      "variants": [
+        {
+          "syntax": "{$RELEASEDOC SRS}",
+          "description": "Include release doc by name from current version"
+        },
+        {
+          "syntax": "{$RELEASEDOC ProjectName -> DocName}",
+          "description": "Include from referenced project"
+        },
+        {
+          "syntax": "{$RELEASEDOC MilestoneName / DocName}",
+          "description": "Include milestone document"
+        }
+      ]
+    },
+
+    "$SUMMARIZE": {
+      "syntax": "$SUMMARIZE [varName] = itemRecords:[sourceVar] [options]",
+      "description": "Generate AI summary of item records",
+      "options": [
+        "totalWordTarget:N",
+        "wordTargetPerItem:N", 
+        "instructions:\"custom instructions\""
+      ],
+      "example": "{$SUMMARIZE summary = itemRecords:changedItems totalWordTarget:500}"
+    }
+  },
+
+  "filters": {
+    "description": "Filter functions for transforming data in expressions",
+    
+    "arrayFilters": {
+      "where": {
+        "syntax": "array | where:'expression'",
+        "description": "Filter array items where expression is truthy",
+        "examples": [
+          "items | where:'status == \"Approved\"'",
+          "items | where:'typeName == \"Requirement\"'",
+          "items | where:'fieldValue.Priority == \"High\"'"
+        ]
+      },
+      "map": {
+        "syntax": "array | map:'expression'",
+        "description": "Transform each item using expression",
+        "examples": [
+          "items | map:'title'",
+          "items | map:'{title: title, id: docId}'"
+        ]
+      },
+      "sort": {
+        "syntax": "array | sort:'expression'",
+        "description": "Sort array by expression result",
+        "examples": [
+          "items | sort:'title'",
+          "items | sort:'fieldValue.Priority'",
+          "items | sort:'docId':'customCollation':'aAdo'"
+        ],
+        "notes": [
+          "Third param 'customCollation' enables special sorting",
+          "Fourth param is character class order: a=lowercase, A=uppercase, d=digit, o=other"
+        ]
+      },
+      "sortByNumericTextField": {
+        "syntax": "array | sortByNumericTextField:'expression'",
+        "description": "Sort with natural number ordering (1, 2, 10 not 1, 10, 2)",
+        "example": "items | sortByNumericTextField:'docId'"
+      },
+      "reverse": {
+        "syntax": "array | reverse",
+        "description": "Reverse array order",
+        "example": "items | sort:'createdAt' | reverse"
+      },
+      "group": {
+        "syntax": "array | group:'expression':'fallbackKey'",
+        "description": "Group items by expression result",
+        "example": "items | group:'typeName':'Unknown'",
+        "resultStructure": [
+          { "groupKey": "value", "groupItems": ["array of items"] }
+        ]
+      },
+      "take": {
+        "syntax": "array | take:N",
+        "description": "Take first N items (or last N if negative)",
+        "examples": [
+          "items | take:5",
+          "items | take:-3"
+        ]
+      },
+      "drop": {
+        "syntax": "array | drop:N", 
+        "description": "Drop first N items (or last N if negative)",
+        "example": "items | drop:1"
+      },
+      "count": {
+        "syntax": "array | count",
+        "description": "Get array length",
+        "example": "items | count"
+      },
+      "at": {
+        "syntax": "array | at:index",
+        "description": "Get item at index (supports negative indexing)",
+        "examples": [
+          "items | at:0",
+          "items | at:-1"
+        ]
+      },
+      "entries": {
+        "syntax": "array | entries",
+        "description": "Convert to array of {key, value} objects",
+        "example": "myObject | entries"
+      }
+    },
+
+    "stringFilters": {
+      "join": {
+        "syntax": "array | join:'separator'",
+        "description": "Join array elements into string",
+        "examples": [
+          "items | map:'title' | join:', '",
+          "regions | join:' / '"
+        ]
+      },
+      "split": {
+        "syntax": "string | split:'separator':limit",
+        "description": "Split string into array",
+        "example": "'a,b,c' | split:','"
+      },
+      "splitOnce": {
+        "syntax": "string | splitOnce:'separator'",
+        "description": "Split string into exactly 2 parts",
+        "example": "'key=value=extra' | splitOnce:'='"
+      },
+      "stringReplace": {
+        "syntax": "string | stringReplace:'search':'replace'",
+        "description": "Replace all occurrences in string",
+        "example": "title | stringReplace:'_':' '"
+      },
+      "toSentenceCase": {
+        "syntax": "string | toSentenceCase",
+        "description": "Capitalize first letter, lowercase rest",
+        "example": "'HELLO WORLD' | toSentenceCase"
+      },
+      "toTitleCase": {
+        "syntax": "string | toTitleCase",
+        "description": "Capitalize first letter of each word",
+        "example": "'hello world' | toTitleCase"
+      }
+    },
+
+    "dateFilters": {
+      "datetime": {
+        "syntax": "date | datetime:'format':'timezone'",
+        "description": "Format a date value",
+        "examples": [
+          "createdAt | datetime",
+          "createdAt | datetime:'YYYY-MM-DD'",
+          "createdAt | datetime:'MMMM D, YYYY':'America/New_York'"
+        ],
+        "formatTokens": [
+          "YYYY - 4-digit year",
+          "YY - 2-digit year", 
+          "MM - 2-digit month",
+          "M - month number",
+          "MMMM - full month name",
+          "MMM - abbreviated month",
+          "DD - 2-digit day",
+          "D - day number",
+          "HH - 24-hour hour",
+          "hh - 12-hour hour",
+          "mm - minutes",
+          "ss - seconds",
+          "A - AM/PM"
+        ]
+      }
+    },
+
+    "objectFilters": {
+      "at": {
+        "syntax": "object | at:'key'",
+        "description": "Get property by key (useful for keys with special chars)",
+        "example": "fieldValue | at:'My Field (Custom)'"
+      },
+      "setProperty": {
+        "syntax": "object | setProperty:'propName':'expression'",
+        "description": "Add computed property to object(s)",
+        "example": "items | setProperty:'fullTitle':'docId + \" - \" + title'"
+      },
+      "createMap": {
+        "syntax": "array | createMap:'keyExpression':'duplicateHandling'",
+        "description": "Create lookup map from array",
+        "example": "items | createMap:'docId':'first'"
+      },
+      "getFromMap": {
+        "syntax": "map | getFromMap:key",
+        "description": "Look up value from map",
+        "example": "itemMap | getFromMap:currentDocId"
+      }
+    },
+
+    "contentFilters": {
+      "itemContent": {
+        "syntax": "record | itemContent:'options'",
+        "description": "Render full item content HTML",
+        "options": [
+          "INCLUDE fieldName1,fieldName2 - Only include specified fields",
+          "OMIT fieldName1,fieldName2 - Exclude specified fields", 
+          "HEADINGS +N - Shift heading levels by N"
+        ],
+        "examples": [
+          "item | itemContent",
+          "item | itemContent:'OMIT Description,Attachments'",
+          "item | itemContent:'INCLUDE Title,Description':'HEADINGS +1'"
+        ]
+      },
+      "hyperlink": {
+        "syntax": "url | hyperlink:'label'",
+        "description": "Create clickable hyperlink",
+        "example": "item.url | hyperlink:'View in Ketryx'"
+      },
+      "toLink": {
+        "syntax": "url | toLink:'text':'style'",
+        "description": "Create HTML link with optional styling",
+        "example": "url | toLink:'Click here':'color:blue'"
+      },
+      "fileSize": {
+        "syntax": "bytes | fileSize",
+        "description": "Format bytes as human-readable size",
+        "example": "attachment.sizeBytes | fileSize"
+      }
+    },
+
+    "bookmarkFilters": {
+      "bookmarkLink": {
+        "syntax": "bookmarkId | bookmarkLink:'content'",
+        "description": "Create link to bookmark (page number if no content)",
+        "example": "item.docId | bookmarkLink"
+      },
+      "bookmarkStart": {
+        "syntax": "bookmarkId | bookmarkStart",
+        "description": "Start a bookmark anchor",
+        "example": "{@item.docId | bookmarkStart}"
+      },
+      "bookmarkEnd": {
+        "syntax": "bookmarkId | bookmarkEnd", 
+        "description": "End a bookmark anchor",
+        "example": "{@item.docId | bookmarkEnd}"
+      }
+    },
+
+    "specialFilters": {
+      "inMilestone": {
+        "syntax": "record | inMilestone",
+        "description": "Check if record is in current document's milestone",
+        "example": "items | where:'inMilestone'"
+      },
+      "inRegion": {
+        "syntax": "record | inRegion",
+        "description": "Check if record is in current document's region",
+        "example": "items | where:'inRegion'"
+      },
+      "repeatRowsForColumns": {
+        "syntax": "rows | repeatRowsForColumns:'col1,col2':'targetProp'",
+        "description": "Expand rows for each non-empty column value",
+        "example": "rtm.rows | repeatRowsForColumns:'TC,TE':'sourceColumn'"
+      },
+      "toJson": {
+        "syntax": "value | toJson",
+        "description": "Serialize value to JSON string",
+        "example": "item | toJson"
+      }
+    }
+  },
+
+  "builtinVariables": {
+    "description": "Variables automatically available in all templates",
+    
+    "project": {
+      "description": "Current project information",
+      "fields": {
+        "id": "Ketryx project ID (KXPRJ...)",
+        "name": "Project name"
+      }
+    },
+    
+    "organization": {
+      "description": "Organization information",
+      "fields": {
+        "id": "Ketryx organization ID",
+        "name": "Organization name"
+      }
+    },
+    
+    "version": {
+      "description": "Current version (null if no version selected)",
+      "fields": {
+        "id": "Ketryx version ID (KXVSN...)",
+        "name": "Version name",
+        "versionNumber": "Normalized version number",
+        "description": "Version description",
+        "isReleased": "Boolean",
+        "releaseDate": "Release date (Date object)",
+        "releaseType": "Release type enum",
+        "scopeDescription": "Async function returning rendered scope HTML"
+      }
+    },
+    
+    "versionScopeDescription": {
+      "description": "Pre-rendered version scope description HTML",
+      "type": "string"
+    },
+    
+    "document": {
+      "description": "Current document metadata",
+      "fields": {
+        "id": "Document ID string",
+        "title": "Document title",
+        "date": "Generation date",
+        "type": "Document type enum"
+      }
+    },
+    
+    "milestone": {
+      "description": "Current milestone (if generating milestone doc)",
+      "fields": {
+        "id": "Milestone ID",
+        "name": "Milestone name",
+        "meetingNotes": "Array of meeting notes",
+        "configurationItems": "Items in this milestone",
+        "completedAt": "Completion date",
+        "createdAt": "Creation date"
+      }
+    },
+    
+    "milestones": {
+      "description": "All milestones in current version",
+      "type": "Array of milestone objects"
+    },
+    
+    "dependencies": {
+      "description": "All dependencies in project/version",
+      "itemFields": {
+        "name": "Dependency name",
+        "declaredVersions": "Declared versions (semicolon-separated)",
+        "lockedVersions": "Locked versions (semicolon-separated)",
+        "latestAvailableVersion": "Latest available version",
+        "status": "Dependency status",
+        "riskLevel": "Risk level text",
+        "license": "License",
+        "manufacturer": "Manufacturer",
+        "vulnerabilityInfos": "Array of vulnerability info objects",
+        "relatedRequirements": "Related requirement records",
+        "relatedRisks": "Related risk records",
+        "relatedSoftwareItems": "Related software item records",
+        "relatedTests": "Related test records",
+        "record": "Full item record (if dependency has Ketryx item)"
+      }
+    },
+    
+    "vulnerabilities": {
+      "description": "All vulnerabilities in project/version",
+      "itemFields": {
+        "info": {
+          "id": "Vulnerability ID",
+          "summary": "Summary",
+          "description": "Description",
+          "currentSeverity": "Current severity object",
+          "originalSeverity": "Original severity object",
+          "cveId": "CVE ID",
+          "cweIds": "CWE IDs array",
+          "publishedDate": "Published date",
+          "vulnerabilitySource": "Source display name"
+        },
+        "descriptionContent": "Rendered description HTML",
+        "dependency": "Associated dependency data",
+        "record": "Associated Ketryx item record",
+        "relatedRisks": "Related risk records",
+        "relatedMitigations": "Related mitigation records"
+      }
+    },
+    
+    "approvals": {
+      "description": "All approvals in project",
+      "itemFields": {
+        "id": "Approval ID",
+        "createdAt": "Approval date",
+        "approver": "User object",
+        "appliedSteps": "Applied approval step names",
+        "revokedAt": "Revocation date (if revoked)",
+        "record": "Approved record",
+        "version": "Approved version"
+      }
+    },
+    
+    "trainingStatus": {
+      "description": "Training status for all users",
+      "itemFields": {
+        "user": "User object",
+        "groupNames": "User's group memberships",
+        "documents": "Array of document training status"
+      }
+    },
+    
+    "trainingDocuments": {
+      "description": "All training documents",
+      "type": "Array of training document objects"
+    },
+    
+    "projectReferences": {
+      "description": "Referenced projects (system-of-systems)",
+      "itemFields": {
+        "depth": "Reference depth level",
+        "project": "Referenced project info",
+        "version": "Referenced version info"
+      }
+    },
+    
+    "versions": {
+      "description": "Previous versions (alias for previousVersions)",
+      "type": "Array of VersionTemplateData"
+    },
+    
+    "previousVersions": {
+      "description": "All versions before current",
+      "type": "Array of VersionTemplateData"
+    },
+    
+    "allVersions": {
+      "description": "All versions in project",
+      "type": "Array of VersionTemplateData"
+    },
+    
+    "documentVersions": {
+      "description": "Document version control history",
+      "itemFields": {
+        "releaseDate": "Release date",
+        "documentTitle": "Document title",
+        "versionName": "Version name"
+      }
+    },
+    
+    "riskManagement": {
+      "description": "Pre-computed risk management matrices",
+      "fields": {
+        "initialTotalProbabilityMatrix": "Initial total probability matrix HTML",
+        "initialAcceptabilityMatrix": "Initial acceptability matrix HTML",
+        "residualTotalProbabilityMatrix": "Residual total probability matrix HTML",
+        "residualAcceptabilityMatrix": "Residual acceptability matrix HTML",
+        "...PerHazard": "Per-hazard versions of each matrix"
+      }
+    },
+    
+    "automatedTestExecutions": {
+      "description": "Automated test executions in test plan",
+      "itemFields": {
+        "title": "Test title",
+        "url": "Link to execution",
+        "testResult": "Test result string"
+      }
+    },
+    
+    "riskControlMatrix": {
+      "description": "Risk control traceability data",
+      "itemFields": {
+        "riskControl": "Control item record",
+        "controlledRisk": "Controlled risk record",
+        "introducedRisks": "Array of introduced risk records",
+        "testExecutions": "Array of test execution results"
+      }
+    },
+    
+    "specialCharacters": {
+      "description": "Escape sequences for special characters in templates",
+      "braceOpen": "{ character",
+      "braceClose": "} character",
+      "bracketOpen": "[ character",
+      "bracketClose": "] character",
+      "parenOpen": "( character",
+      "parenClose": ") character",
+      "equalSign": "= character",
+      "percentSign": "% character"
+    },
+    
+    "toc": {
+      "description": "Table of contents XML (use with @ prefix)",
+      "usage": "{@toc}"
+    },
+    
+    "ketryxVersion": {
+      "description": "Ketryx platform version string",
+      "type": "string"
+    }
+  },
+
+  "itemRecordFields": {
+    "description": "Fields available on item records from $KQL queries",
+    
+    "identification": {
+      "id": "Ketryx record ID (KXREC...)",
+      "shortenItemId": "Shortened item ID",
+      "docId": "Document ID (e.g., RQ-001)",
+      "url": "URL to view record in Ketryx"
+    },
+    
+    "type": {
+      "typeName": "Full type name (e.g., 'Software Requirement')",
+      "typeShortName": "Short type name (e.g., 'RQ')"
+    },
+    
+    "versioning": {
+      "revision": "Current revision number",
+      "controlledRevision": "Controlled revision number",
+      "uncontrolledRevision": "Uncontrolled revision number",
+      "isControlled": "Boolean - is this a controlled revision",
+      "introducedInVersion": "Version name where introduced",
+      "obsoleteInVersion": "Version name where made obsolete",
+      "diff": "Diff type: 'New', 'Changed', 'Removed', 'Same'"
+    },
+    
+    "content": {
+      "title": "Item title",
+      "status": "Current status name",
+      "regions": "Array of region names",
+      "createdAt": "Creation timestamp",
+      "isRiskAcceptable": "Boolean - risk acceptability",
+      "repositoryFilePath": "Git file path (if git-based item)"
+    },
+    
+    "people": {
+      "reporter": "Reporter user object (id, email, name)",
+      "assignee": "Assignee user object (id, email, name)"
+    },
+    
+    "fieldAccess": {
+      "fieldValue": {
+        "description": "Plain text field values by normalized field name",
+        "access": "fieldValue.Field_Name",
+        "notes": [
+          "Spaces become underscores",
+          "Parentheses are removed",
+          "Both original and normalized names work"
+        ]
+      },
+      "fieldContent": {
+        "description": "Rich text field content (rendered HTML)",
+        "access": "fieldContent.Field_Name",
+        "usage": "{~~fieldContent.Description}"
+      },
+      "fieldContentDiff": {
+        "description": "Field content with diff markup (compared to previous version)",
+        "access": "fieldContentDiff.Field_Name"
+      },
+      "fieldChanged": {
+        "description": "Boolean indicating if field changed from previous version",
+        "access": "fieldChanged.Field_Name"
+      }
+    },
+    
+    "relations": {
+      "description": "Related items accessed via 'relations' property",
+      "structure": {
+        "type": "Relation type string",
+        "name": "Human-readable relation name",
+        "other": "Related item record (core data)",
+        "isReverse": "Boolean - is this a reverse relation"
+      },
+      "filtering": "relations | where:'type == \"tests\"'",
+      "commonTypes": [
+        "tests",
+        "implements",
+        "is related to",
+        "found anomaly",
+        "contains",
+        "executes",
+        "affects",
+        "has parent"
+      ]
+    },
+    
+    "attachments": {
+      "description": "File attachments on the record",
+      "itemFields": {
+        "id": "Attachment ID",
+        "filename": "File name",
+        "sizeBytes": "File size in bytes",
+        "contentType": "MIME type",
+        "contentSha256": "Content hash",
+        "createdAt": "Upload timestamp",
+        "url": "Download URL",
+        "renderedContent": "Rendered HTML (for images)",
+        "isImage": "Boolean"
+      }
+    },
+    
+    "approvals": {
+      "description": "Approvals on this specific record",
+      "itemFields": {
+        "id": "Approval ID",
+        "createdAt": "Approval timestamp",
+        "approver": "User object",
+        "appliedSteps": "Array of step names"
+      }
+    },
+    
+    "comments": {
+      "description": "Comments on this record (async)",
+      "itemFields": {
+        "id": "Comment ID",
+        "author": "User object",
+        "content": "Rendered HTML content",
+        "createdAt": "Comment timestamp",
+        "recordRevision": "Revision when commented"
+      }
+    },
+    
+    "itemContent": {
+      "description": "Pre-rendered full item content HTML",
+      "usage": "{~~item.itemContent}",
+      "filtering": "Use itemContent filter for options"
+    },
+    
+    "version": {
+      "description": "Version data object (if loaded with version context)",
+      "type": "VersionTemplateData"
+    },
+    
+    "xrayFields": {
+      "description": "Xray-specific fields (if Xray integration enabled)",
+      "steps": "Test steps array",
+      "testRuns": "Test run results",
+      "testEnvironments": "Test environments array"
+    }
+  },
+
+  "testStatusFields": {
+    "description": "Fields available on test status objects from $TRACE",
+    
+    "identification": {
+      "id": "Test status ID",
+      "title": "Test title",
+      "isInTestPlan": "Boolean - is in test plan"
+    },
+    
+    "testCase": {
+      "description": "Associated test case record",
+      "type": "ItemRecordFullTemplateData"
+    },
+    
+    "testedItem": {
+      "description": "Primary tested item",
+      "type": "Item core data"
+    },
+    
+    "testedItems": {
+      "description": "All tested items",
+      "type": "Array of item core data"
+    },
+    
+    "execution": {
+      "executedAt": "Execution timestamp",
+      "result": "Test result string (PASS, FAIL, etc.)",
+      "isExecutionControlled": "Boolean",
+      "isMissingManualExecution": "Boolean"
+    },
+    
+    "executions": {
+      "manualExecutions": "Manual test execution records",
+      "automatedExecutions": "Automated test execution objects",
+      "effectiveExecutions": "Combined effective executions",
+      "allManualExecutions": "All manual execution records"
+    }
+  },
+
+  "kqlSyntax": {
+    "description": "Ketryx Query Language syntax for $KQL commands",
+    
+    "typeFilter": {
+      "syntax": "type:TypeName",
+      "examples": [
+        "type:Requirement",
+        "type:\"Software Requirement\"",
+        "type:(Requirement,\"Test Case\")"
+      ]
+    },
+    
+    "stateFilter": {
+      "syntax": "state:StateName",
+      "examples": [
+        "state:Approved",
+        "state:(Draft,\"In Review\")"
+      ]
+    },
+    
+    "textSearch": {
+      "syntax": "\"search text\"",
+      "description": "Search in title (case-insensitive)"
+    },
+    
+    "fieldFilter": {
+      "syntax": "field:FieldName:Value",
+      "examples": [
+        "field:Priority:High",
+        "field:\"Requirement type\":USER"
+      ]
+    },
+    
+    "relationFilter": {
+      "syntax": "to:query or from:query",
+      "examples": [
+        "to:type:Requirement",
+        "from:id:KXITM..."
+      ]
+    },
+    
+    "diffFilter": {
+      "syntax": "diff:DiffType",
+      "values": ["New", "Changed", "Removed", "Same"]
+    },
+    
+    "idFilter": {
+      "syntax": "id:ItemId",
+      "examples": [
+        "id:KXITM...",
+        "id:(KXITM...,KXITM...)"
+      ]
+    },
+    
+    "combinators": {
+      "and": "Implicit (space between terms)",
+      "or": "Use parentheses: (type:A,type:B)",
+      "not": "Prefix with NOT: NOT state:Obsolete"
+    }
+  },
+
+  "commonPatterns": {
+    "description": "Common template patterns and examples",
+    
+    "simpleItemList": {
+      "description": "List all items of a type",
+      "template": [
+        "{$KQL items = type:Requirement}",
+        "{#items}",
+        "- {docId}: {title}",
+        "{/items}"
+      ]
+    },
+    
+    "filteredTable": {
+      "description": "Table with filtered and sorted items",
+      "template": [
+        "{$KQL items = type:Requirement state:Approved}",
+        "{$SET sorted = items | sort:'docId'}",
+        "| ID | Title | Priority |",
+        "|---|---|---|",
+        "{#sorted}| {docId} | {title} | {fieldValue.Priority} |{/sorted}"
+      ]
+    },
+    
+    "itemWithRichContent": {
+      "description": "Item with rich text description",
+      "template": [
+        "{#items}",
+        "## {docId} - {title}",
+        "{~~fieldContent.Description}",
+        "{/items}"
+      ]
+    },
+    
+    "relatedItems": {
+      "description": "Show items with their relations",
+      "template": [
+        "{#items}",
+        "{title}",
+        "Tests: {#relations | where:'type == \"tests\"'}{other.docId}, {/relations}",
+        "{/items}"
+      ]
+    },
+    
+    "conditionalContent": {
+      "description": "Show content based on condition",
+      "template": [
+        "{#item.isControlled}",
+        "Status: Controlled (Rev {item.controlledRevision})",
+        "{/item.isControlled}",
+        "{^item.isControlled}",
+        "Status: Draft",
+        "{/item.isControlled}"
+      ]
+    },
+    
+    "traceabilityMatrix": {
+      "description": "RTM table from $TRACE",
+      "template": [
+        "{$TRACE rtm}",
+        "| Requirement | Test Case | Result |",
+        "|---|---|---|",
+        "{#rtm.rows}| {columns.REQ.itemRecord.docId} | {columns.TC.itemRecord.docId} | {columns.TC.testStatus.result} |{/rtm.rows}"
+      ]
+    },
+    
+    "groupedByType": {
+      "description": "Items grouped by type",
+      "template": [
+        "{$KQL items = *}",
+        "{$SET grouped = items | group:'typeName':'Other'}",
+        "{#grouped}",
+        "## {groupKey}",
+        "{#groupItems}{docId}: {title}",
+        "{/groupItems}",
+        "{/grouped}"
+      ]
+    },
+    
+    "versionComparison": {
+      "description": "Show changes between versions",
+      "template": [
+        "{$KQL items = type:Requirement diff:Changed}",
+        "{#items}",
+        "### {docId} - {title}",
+        "**Before:**",
+        "{~~fieldContentDiff.Description}",
+        "{/items}"
+      ]
+    },
+    
+    "bookmarkedItems": {
+      "description": "Create bookmarks and cross-references",
+      "template": [
+        "{#items}",
+        "{@docId | bookmarkStart}{docId}{@docId | bookmarkEnd}: {title}",
+        "{/items}",
+        "",
+        "See requirement {docId | bookmarkLink} on page {docId | bookmarkLink}"
+      ]
+    }
+  },
+
+  "fieldNameNormalization": {
+    "description": "How field names are normalized for template access",
+    "rules": [
+      "Spaces are replaced with underscores",
+      "Parentheses are removed",
+      "Both original and normalized names work"
+    ],
+    "examples": [
+      { "original": "My Field", "normalized": "My_Field" },
+      { "original": "Priority (Custom)", "normalized": "Priority_Custom" },
+      { "original": "Description", "normalized": "Description" }
+    ]
+  },
+
+  "errorHandling": {
+    "description": "How template errors are handled",
+    "behavior": [
+      "Syntax errors: Document generates with error comments",
+      "Missing variables: Render as empty string",
+      "Failed async operations: May render partial results",
+      "Invalid filters: May throw or return original value"
+    ],
+    "debugging": [
+      "Check generated document for red error comments",
+      "Use simpler expressions to isolate issues",
+      "Verify variable names match exactly (case-sensitive for field names)"
+    ]
+  }
+}

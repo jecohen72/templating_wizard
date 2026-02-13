@@ -1,0 +1,1842 @@
+{
+  "_meta": {
+    "generatedAt": "2026-01-13T21:39:20Z",
+    "purpose": "AI-optimized project data for template generation",
+    "version": "2.0.0",
+    "notes": [
+      "access.plain: Use in table cells, inline text, anywhere plain string is needed",
+      "access.rich: Use when HTML rendering is desired (prefixed with ~~)",
+      "kqlQuery: Pre-computed query to fetch all items of this type",
+      "uniqueValues: All possible values (for categorical fields with <=25 values)",
+      "exampleValues: Sample values (for fields with >25 unique values)"
+    ]
+  },
+  "project": {
+    "id": "KXPRJ07006WA5NA9QY81KF3C55788G9",
+    "name": "navify Clinical Hub (nCH)",
+    "description": ""
+  },
+  "version": {
+    "id": "KXVSN78XB830XPP9KMVMWJAY2EC4AVB",
+    "name": "Ketryx-1.2.0",
+    "isReleased": null
+  },
+  "allVersions": [
+    {
+      "id": "KXVSN0E14HXWJTX89YAWEK0GMJV0XYT",
+      "name": "Hypercare W40",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN66436GWRRS9ENVZ5ZTQY4C0FDQ",
+      "name": "Ketryx-1.0.0",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN2E4JPT0MYH8JJT53E8G7Y0KP7Q",
+      "name": "Ketryx-1.1.0",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN37M1HHRKBX85NVJJY8MK6QX2RN",
+      "name": "Ketryx- 1.1.1",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN78XB830XPP9KMVMWJAY2EC4AVB",
+      "name": "Ketryx-1.2.0",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN0TMKR06QQH8EYSPEWVZB84F93X",
+      "name": "Ketryx-1.3.0",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN20G4H4KJEJ9VP8AG27GPJ0RAJ3",
+      "name": " LPR-1.23.1",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN773RE6QGZZ9TBVM6GP2FJ25QS3",
+      "name": "PJ 1.23.1",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN43BMKSNXAW9GWVNKCECYHHN1T8",
+      "name": "PL 1.23.1",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN31F8MJHD1E9NXR6TK4CVN0JB42",
+      "name": "PS 1.23.1",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN5PSSKJ8XP38PJ8JT2M6ZHBV4HE",
+      "name": "LPR - 1.23.2",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN26D4H751458M9BQTRVNXB3TN1G",
+      "name": "LPR-1.24.0",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN39QPZGQNR892NVANZGJGGEG91R",
+      "name": "LPR-1.25.0",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN7EAS6ZBJ9R9CWVVFX0AB7G1Y40",
+      "name": "LPR-1.26.0",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN2NBCQYBG4W9PASA42PMMR2VPF0",
+      "name": "OAR 1.26.1",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN0YDH4KXCN79KTRHA1GQBP2D5SS",
+      "name": "LPR-1.27.0",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN29NH77610N85GRRGEXNWRVNQW0",
+      "name": "OAR-1.27.0",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN3E0P07Z9R68GMS9XH1HMM771ZX",
+      "name": "LPR-1.27.1",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN284E834W7H96SSATQBZNG5VXKX",
+      "name": "LPR-1.28.0",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN2T5JM7GNYH96FT2MKSBZM01Y0Y",
+      "name": "OAR 1.28.0",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN7RCJ4GN3DZ9BRVJ6E4YRGFR5PF",
+      "name": "OAR-1.28.0",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN4G5ZXZPH998ASA9N3TJ7K35T22",
+      "name": "LPR-1.28.1",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN3WB9AWG5JC8628C83BV694J1JN",
+      "name": "OAR-1.28.1",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN7M9TX22QQD9D6VWEYGP61CB7AJ",
+      "name": "OAR-1.28.2",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN38DQH44K7T92BBD37EB6FJVDQ6",
+      "name": "OAR-1.28.3",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN38E2B5RW9P9H9RQ0VQBRW6PHVT",
+      "name": "OAR-1.28.4",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN24SYTYCV399B99K2NWPBQSQAK2",
+      "name": "LPR-1.29.0",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN20G8BS58AD81K9BACE5Z64TB3G",
+      "name": "OAR-1.29.0",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN5CDH4HS6A98BAV9TV1TK6QR38W",
+      "name": "KetryxOldNew-2.0.0",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN1NRMKW06BW8K0BSEHX6F83AEWB",
+      "name": "PUB 2.2.1",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN5HWPNPW49J931S6CNJR8NPX9PG",
+      "name": "CTM-2.2.3",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN0X001TRR8C9R6R39AHZZWR8QT0",
+      "name": "PUB-2.2.3",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN1T9P3NQKQA8R1VAPGBS94JX01Z",
+      "name": "CTM-2.2.4",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN7RNH8FX7MH93CVHCJ2EAG62XCJ",
+      "name": "PUB-2.2.4",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN5P417S8SRG8XGA9ZJMF9YSTZE1",
+      "name": "GCM-2.5.1",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN68DJRBRBM69DK973KBRXYT5ZM5",
+      "name": "GDL-2.5.1",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN3KH14YZBCA84J9TACYHVB3QTF4",
+      "name": "GDL-2.5.2",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN5W1BVMYPS48J4S0BMPHRVSCB3S",
+      "name": "nCH 3.4.3",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN02GX6CFM9Q8NEAKY2RJ2PXZ18T",
+      "name": "nCH 3.5.0",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN314KVSYSEF93YA34TS9F2WECFR",
+      "name": "nCH 3.5.2",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN120JMFAQQR9XPS1ZN4VG69H5AY",
+      "name": "nCH 3.6.0",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN35A4VY827Q99JSC4V36ARZRGZ7",
+      "name": "nCH 3.7.0",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN2EDV3K533F999AGFZYAP31R7GN",
+      "name": "nCH 3.7.1",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN1MD36KGTJ79XX8G50X1ZNM6KQG",
+      "name": "OSC 3.7.1",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN7ZF9RSXJ789VFAFV73QZV8SJBS",
+      "name": "nCH 3.7.2",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN07XVDC8GS9976RPMBDE7FVTZXP",
+      "name": "nCH 3.7.3",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN03SVMTMVT68GD88YT0Y01QKFK2",
+      "name": "nCH 3.7.4",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN2TBZWZ30WK90J8YKG8XN7X74JJ",
+      "name": "nCH 3.8.0",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN7ZMM1EEFTD943TT4CX4A6H73M7",
+      "name": "OSC-3.8.0",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN2Z7ABXW2Q697C8W0HWSMNJZQBW",
+      "name": "3.9",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN56GZ5XH8WF8ZKT2YN49WM2MB0S",
+      "name": "nCH 3.9.0",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN0F7EY3S8F58AVAA8Y7PYWGVMRP",
+      "name": "OSC-3.9.0",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN42FB7FF5KT81SAR1WQAV54PMGB",
+      "name": "MDT-3.9.2",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN0GDCG625FH9JKVC7RJCX209HKX",
+      "name": "MDT-3.9.3",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN063R9VQENB9HM9F2EP5XGP896N",
+      "name": "MDT-3.9.9",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN2G54DWCYKX8WT8V5VHP3CW3W6M",
+      "name": "MDT-3.10.0",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN4KVB9H4S1T857VQRGRZJTC0RDE",
+      "name": "nCH 3.10.0",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN3QSR9D05MZ9MCAKPY90DMBYJ9E",
+      "name": "OSC-3.10.0",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN2WYFCPMB8B8FKRZE843XDDV3H9",
+      "name": "nCH 3.10.1",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN6PM6PH75RN97SATDNHJ6WHQ2ZH",
+      "name": "OSC-3.10.1",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN0FZSWW6KGF8D28TYHN2102MQDS",
+      "name": "nCH 3.10.2",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN7VK0N6HEPA8M3TGPTP8ZCEYSMD",
+      "name": "OSC-3.10.2",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN7EZM5Y1CSS9B3RKF9KW5TCPK6B",
+      "name": "nCH 3.10.3",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN59DDSATM8W82PB7N0GWY0KHM8G",
+      "name": "OSC-3.10.3",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN0YMWS88HDD8N4VGZ1SXBYFV8QD",
+      "name": "OSC-3.10.4",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN49MN1NTGBZ8AERHD8MMPEJ5YPA",
+      "name": "OSC-3.10.5",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN7QD4VSZVFY98B8NJPP834T4BZG",
+      "name": "MDT-3.11.0",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN1Q6CREQWKF8MAVKVA342R0RWAM",
+      "name": "NCH-3.11.0 [CTM]",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN2483BZ2YF48738P65580WXGSC3",
+      "name": "nCH-3.11.0 [do not use]",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN3MKR6KC7C49F2RE0TZAHKDHZVB",
+      "name": "NCH-3.11.0 [LPR]",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN4QQFJJC2C2825VWVDD9E5A41RB",
+      "name": "nCH-3.11.0 [MDT]",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN3JS25DNRPW88GS89RMKCMPY1G1",
+      "name": "NCH-3.11.0 [OAR]",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN06WD2NBR679NR8PRZ5EXJ5RDNY",
+      "name": "NCH-3.11.0 [OAR]- obsolete",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN3NEXSAKH0X9K0VXE6PNR8KA2S7",
+      "name": "NCH-3.11.0 [OSC]",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN4HFB3G4X549ECRV55V2D7B17WV",
+      "name": "NCH-3.11.0 [OSC] - obsolete",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN3SS8NY43FG8MRB5FMNC5P3B54R",
+      "name": "nCH-3.11.0 [PatientJourney]",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN58E7NKDWNW9HKAN28P0XYMWP02",
+      "name": "nCH-3.11.0 [PatientSummary]",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN30CN23S82B8EDRJZB2SREBCNQ9",
+      "name": "NCH-3.11.0 [PUB]",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN75FBHAJMNW9EKA2HF3A9FM0YHS",
+      "name": "nCH-3.11.0 [Reports]",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN5W4V730C949E0T5DVC486D6700",
+      "name": "MDT-3.12.0",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN37JHHE9H198MXSVJ4KPDFQFAP9",
+      "name": "nCH 3.12.0",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN62YJM95TCK9P2BZNE3YC4ZMGDR",
+      "name": "nCH-3.12.0 [OSC]",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN3DX1PY18828WXAX1E3JM4561DN",
+      "name": "MDT-3.12.1",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN5SY07K75NM8579C4SV5EHPDBX7",
+      "name": "MDT-3.12.2",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN3PN46TDPZW868AG635B6PKQAD1",
+      "name": "MDT-3.12.3",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN27XE3SC33F8GEANBW0HEX7YTW0",
+      "name": "MDT-3.13.0",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN2DFAN409PF9GQ9J3MS2T3SM4P0",
+      "name": "MDT-3.13.1",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN7XQP94CS3H835VJXH9PNZEEFM8",
+      "name": "MDT-3.13.2",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN7SEW89MDTG952AM39CKQQH34DZ",
+      "name": "MDT-3.13.3",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN46BNFVHDCT8MSA4FP867EHMTWN",
+      "name": "MDT-TBD",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN31W3R3WSYR9ZM8VZJRJBDGFGQS",
+      "name": "PJ-TBD",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN2P3T5SV8Y88MK98NREXGW6NN6Y",
+      "name": "PS-TBD",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN38E1XKKWAS9CQV0XPS99E79YTV",
+      "name": "PL-TBD",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN10JZ9828NE876TNKGKW1F9W93D",
+      "name": "N/A",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN2YB11CZG2S9ARSGCZAJ45MESHW",
+      "name": "MDT-N/A",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN2MDSV7DQTH8JVS96KKKQ6PCZYM",
+      "name": "OAR-N/A",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN6KHXC89STY9WTSQM0TCT763YHV",
+      "name": "Future releases",
+      "isReleased": false
+    },
+    {
+      "id": "KXVSN16T52GCW8682XVN3QMVCT3CBVE",
+      "name": "Sunrise",
+      "isReleased": false
+    }
+  ],
+  "summary": {
+    "totalItems": 1491,
+    "itemTypeCount": 10,
+    "totalRelations": 1331
+  },
+  "builtinVariables": {
+    "project": {
+      "project.name": {
+        "description": "Project name",
+        "dataType": "string",
+        "access": "project.name"
+      },
+      "project.id": {
+        "description": "Project Ketryx ID",
+        "dataType": "string",
+        "access": "project.id"
+      }
+    },
+    "version": {
+      "version.name": {
+        "description": "Version name/number",
+        "dataType": "string",
+        "access": "version.name"
+      },
+      "version.id": {
+        "description": "Version Ketryx ID",
+        "dataType": "string",
+        "access": "version.id"
+      },
+      "version.isReleased": {
+        "description": "Whether version is released",
+        "dataType": "boolean",
+        "access": "version.isReleased"
+      },
+      "version.releaseDate": {
+        "description": "Release date (if released)",
+        "dataType": "datetime",
+        "access": "version.releaseDate"
+      }
+    },
+    "document": {
+      "document.title": {
+        "description": "Document title",
+        "dataType": "string",
+        "access": "document.title"
+      },
+      "document.date": {
+        "description": "Document generation date",
+        "dataType": "datetime",
+        "access": "document.date"
+      },
+      "document.version": {
+        "description": "Document version",
+        "dataType": "string",
+        "access": "document.version"
+      }
+    }
+  },
+  "itemTypes": {
+    "Task": {
+      "kqlQuery": "type:Task",
+      "count": 412,
+      "fields": {
+        "title": {
+          "label": "title",
+          "dataType": "string",
+          "access": {
+            "plain": "title"
+          },
+          "exampleValues": [
+            "Task test (1.0.0)",
+            "WORKFLOW TEST",
+            "Story 1 AI Chatbot ",
+            "PENTEST Automation + Manual Test Tenant readiness",
+            "[Observability] Fix issues and turn on alerting [tech enabler]"
+          ]
+        },
+        "revision": {
+          "label": "revision",
+          "dataType": "string",
+          "access": {
+            "plain": "revision"
+          },
+          "uniqueValues": [
+            "10",
+            "11",
+            "12",
+            "13",
+            "20",
+            "26",
+            "27",
+            "3",
+            "4",
+            "45",
+            "6",
+            "8",
+            "9"
+          ]
+        },
+        "isControlled": {
+          "label": "isControlled",
+          "dataType": "string",
+          "access": {
+            "plain": "isControlled"
+          },
+          "uniqueValues": [
+            "False",
+            "True"
+          ]
+        },
+        "createdAt": {
+          "label": "createdAt",
+          "dataType": "string",
+          "access": {
+            "plain": "createdAt"
+          },
+          "exampleValues": [
+            "2025-11-27T14:17:13.338Z",
+            "2025-12-18T13:13:20.432Z",
+            "2025-12-22T11:09:57.123Z",
+            "2026-01-04T18:41:37.240Z",
+            "2026-01-04T18:41:37.305Z"
+          ]
+        },
+        "Description": {
+          "label": "Description",
+          "dataType": "richText",
+          "access": {
+            "plain": "fieldValue.Description",
+            "rich": "~~fieldContent.Description"
+          },
+          "isCustomField": true,
+          "fillRate": "91%"
+        },
+        "Environment": {
+          "label": "Environment",
+          "dataType": "string",
+          "access": {
+            "plain": "fieldValue.Environment"
+          },
+          "isCustomField": true,
+          "uniqueValues": [
+            "{'type': 'doc', 'content': [{'type': 'paragraph', 'content': [{'text': 'EU Prod', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'paragraph', 'content': [{'text': 'QA2', 'type': 'text'}]}], 'version': 1}"
+          ],
+          "fillRate": "0%"
+        }
+      },
+      "sampleRecords": [
+        {
+          "title": "Task test (1.0.0)"
+        },
+        {
+          "title": "WORKFLOW TEST"
+        },
+        {
+          "title": "Story 1 AI Chatbot "
+        }
+      ],
+      "outgoingRelations": [
+        {
+          "relation": "implements",
+          "accessPattern": "relations | where('type', 'implements')"
+        },
+        {
+          "relation": "is related to",
+          "accessPattern": "relations | where('type', 'is related to')"
+        },
+        {
+          "relation": "relates to",
+          "accessPattern": "relations | where('type', 'relates to')"
+        },
+        {
+          "relation": "tests",
+          "accessPattern": "relations | where('type', 'tests')"
+        }
+      ]
+    },
+    "Test Case": {
+      "kqlQuery": "type:\"Test Case\"",
+      "count": 362,
+      "fields": {
+        "title": {
+          "label": "title",
+          "dataType": "string",
+          "access": {
+            "plain": "title"
+          },
+          "exampleValues": [
+            "Verify patient identifier values displayed in NCH based on configuration done in Admin",
+            "Verify patient identifier values displayed in MDT based on configuration done in Admin",
+            "Validate that user is able to create, resume and submit patient to tumor board meeting through simpl",
+            "Verify Patient tags are displayed in NCH for Create, Edit patient and info bar",
+            "Verify Patient tags are displayed in MDT for Create patient and Presentation info bar"
+          ]
+        },
+        "revision": {
+          "label": "revision",
+          "dataType": "string",
+          "access": {
+            "plain": "revision"
+          },
+          "uniqueValues": [
+            "1",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "18",
+            "23",
+            "3",
+            "4",
+            "44",
+            "5",
+            "7",
+            "8",
+            "9"
+          ]
+        },
+        "isControlled": {
+          "label": "isControlled",
+          "dataType": "string",
+          "access": {
+            "plain": "isControlled"
+          },
+          "uniqueValues": [
+            "False",
+            "True"
+          ]
+        },
+        "createdAt": {
+          "label": "createdAt",
+          "dataType": "string",
+          "access": {
+            "plain": "createdAt"
+          },
+          "exampleValues": [
+            "2026-01-04T18:41:45.976Z",
+            "2026-01-04T18:42:01.503Z",
+            "2026-01-04T18:42:11.378Z",
+            "2026-01-04T18:42:20.543Z",
+            "2026-01-04T18:42:20.831Z"
+          ]
+        },
+        "Description": {
+          "label": "Description",
+          "dataType": "richText",
+          "access": {
+            "plain": "fieldValue.Description",
+            "rich": "~~fieldContent.Description"
+          },
+          "isCustomField": true,
+          "fillRate": "98%"
+        },
+        "Steps": {
+          "label": "Steps",
+          "dataType": "string",
+          "access": {
+            "plain": "fieldValue.Steps"
+          },
+          "isCustomField": true,
+          "uniqueValues": [
+            "{'type': 'doc', 'content': [], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 1:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Click Presentation Mode Button', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Presentation Mode should be activated. ', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Presentation should be in full screen mode and browser tooltip \"To exit full screen, press Esc\" should be visible. ', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'The presentation should include an attachment but the menu on the left side containing the document pages should not be visible.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Browser upper part and lower operating system bar shall not be visible.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 2:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Go to ', 'type': 'text'}, {'text': 'Clinical trial', 'type': 'text', 'marks': [{'type': 'strong'}]}, {'text': ' tab.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Presentation mode shall be enabled.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 3:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Go back to ', 'type': 'text'}, {'text': 'Patient review', 'type': 'text', 'marks': [{'type': 'strong'}]}, {'text': ' tab.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Presentation mode shall be enabled.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 4:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Go to the <Patient 2>', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Presentation mode shall be enabled.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 5:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Press the \"Exit presentation mode\" button.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Presentation Mode should be deactivated. Browser upper part and lower operating system bar should be visible.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'The presentation should include an attachment and the menu on the left side containing the document pages should be visible.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 1:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Click on Patient count button for tumor board meeting created in pre-condition.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'User is directed to Meeting patient list page.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 2:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Click on Submit Patient button', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'User is able to see Submit patient to tumor board pop-up.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 3:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Click on Plus button present besides search patient input box', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'User is able to see Add new patient form.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 4:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Fill up all patient details and click on Add patient.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'User is able to submit all patient details and directed to simplified patient summary form with Care Team form displayed first.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 5:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Fill up all required details in the forms and click on confirm  button.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'User is directed to Preview page with all the details populated on the page.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 6:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Click on Submit button', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'User is able to submit patient to the tumor board meeting and re-directed to meeting patient list page where submitted patient details displayed in the list.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 7:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Click on Back button of header bar', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'User is navigated to Meeting list page and 2 count displayed in the Patient section of the meeting.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 1:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Click on View Presentation button', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Presentation summary shall be opened', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 2:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Verify header contains all the required meeting and patient information’s', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'User shall able to see :', 'type': 'text'}]}, {'type': 'orderedList', 'attrs': {'order': 1}, 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Navify ClinicalHub logo', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Meeting Name', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Patient name', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'MRN number', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Date of birth', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Gender', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Requested by information', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Point of discussion', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Meeting Date and time', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Recommendation button', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Previous button', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Next button', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Dropdown icon', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Roche logo', 'type': 'text'}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 3:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Verify that Long Patient/Requested name is displayed as truncated', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Patient/Requested name shall displayed as truncated with ellipsis(...)', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 1:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Generate ', 'type': 'text'}, {'text': 'Patient Case Report', 'type': 'text', 'marks': [{'type': 'strong'}]}, {'text': ' using template ', 'type': 'text'}, {'text': 'patient-case-report-template-reference-OncologicSummary.docx', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'n/a', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'The report shall contain the ', 'type': 'text'}, {'text': 'Oncologic Summary', 'type': 'text', 'marks': [{'type': 'strong'}]}, {'text': ' data.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 2:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Generate ', 'type': 'text'}, {'text': 'Patient Case Report', 'type': 'text', 'marks': [{'type': 'strong'}]}, {'text': ' using template ', 'type': 'text'}, {'text': 'conference-report-template-reference-OncologicSummary.docx', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'n/a', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'The report shall contain the ', 'type': 'text'}, {'text': 'Oncologic Summary', 'type': 'text', 'marks': [{'type': 'strong'}]}, {'text': ' data.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 3:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Generate ', 'type': 'text'}, {'text': 'Patient Case Report', 'type': 'text', 'marks': [{'type': 'strong'}]}, {'text': ' using template ', 'type': 'text'}, {'text': 'patient-case-template-reference-Reports-OncologicSummary.docx', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'n/a', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'The report shall contain the report data:', 'type': 'text'}]}, {'type': 'orderedList', 'attrs': {'order': 1}, 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Surgical Pathology', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'orderedList', 'attrs': {'order': 1}, 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Name,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Date of report,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Date of procedure,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Report type,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Author,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Notes,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Link,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Report is tracked', 'type': 'text'}]}]}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Genomic', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'orderedList', 'attrs': {'order': 1}, 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Name,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Date of report,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Date of procedure,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Report type,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Author,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Notes,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Link,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Report vendor,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Report is not tracked', 'type': 'text'}]}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 4:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Go to presentation and generate ', 'type': 'text'}, {'text': 'Patient Review Report', 'type': 'text', 'marks': [{'type': 'strong'}]}, {'text': ' using template ', 'type': 'text'}, {'text': 'patient-review-template-reference-Reports-OncologicSummary.docx', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'n/a', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'The report shall contain the report data:', 'type': 'text'}]}, {'type': 'orderedList', 'attrs': {'order': 1}, 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Surgical Pathology', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'orderedList', 'attrs': {'order': 1}, 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Name,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Date of report,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Date of procedure,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Report type,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Author,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Notes,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Link,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Report is tracked.', 'type': 'text'}]}]}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Genomic', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'orderedList', 'attrs': {'order': 1}, 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Name,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Date of report,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Date of procedure,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Report type,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Author,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Notes,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Link,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Report vendor', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Report is not tracked.', 'type': 'text'}]}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 1:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Login into Tumor Board as customer admin user.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'User shall be logged in Tumor Board.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 2:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Click on the Analytics menu.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Analytics report is displayed.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 3:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Select the Date range and MDT Type and click apply.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Results are loaded based on the date range and MDT Type selected.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 4:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Click on PATIENT/MDT tab', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Tumor Board table is displayed with meeting records.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 5:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Click on sliding arrow and verify the details inside Tumor Board row.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'All patients assigned to the particular meeting.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 1:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Test step', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Ex r', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'heading', 'attrs': {'level': 3}, 'content': [{'text': 'Preconditions', 'type': 'text'}]}, {'type': 'heading', 'attrs': {'level': 3}, 'content': [{'text': 'Steps', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 1:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Execute Step 1', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Data for Step 1', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Expected Results for Step 1', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 2:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'test2', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'test2', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}], 'version': 1}"
+          ],
+          "fillRate": "4%"
+        },
+        "Environment": {
+          "label": "Environment",
+          "dataType": "string",
+          "access": {
+            "plain": "fieldValue.Environment"
+          },
+          "isCustomField": true,
+          "uniqueValues": [
+            "{'type': 'doc', 'content': [{'type': 'paragraph', 'content': [{'text': 'Test Goals:', 'type': 'text', 'marks': [{'type': 'strong'}]}, {'text': ' ', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Verify if past meeting’s selected data is editable for user with rights and read only for view only user.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Preconditions:', 'type': 'text', 'marks': [{'type': 'strong'}]}, {'text': ' ', 'type': 'text'}]}, {'type': 'orderedList', 'attrs': {'order': 1}, 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': '<Patient1> and <Patient2> are created.', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': '<Meeting1> is created with video conference link and <Patient1> and <Patient2> are added to the meeting.', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': '<Meeting2> is created with video conference link and <Patient1> and <Patient2> are added to the meeting.', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': '<Meeting1> is past meeting.', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': '<Meeting2> is future meeting.', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'There are <User_Admin> with MDT_WRITER rights and <User_View_Only> with MDT_READER rights', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': '<User_View_Only> is logged in and Tumor Board Meetings in Oncology Hub is opened.', 'type': 'text'}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Postconditions:', 'type': 'text', 'marks': [{'type': 'strong'}]}, {'text': '  ', 'type': 'text'}]}, {'type': 'orderedList', 'attrs': {'order': 1}, 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Patient and meetings are deleted.', 'type': 'text'}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Tools:', 'type': 'text', 'marks': [{'type': 'strong'}]}, {'text': ' N/A', 'type': 'text'}]}], 'version': 1}"
+          ],
+          "fillRate": "0%"
+        }
+      },
+      "sampleRecords": [
+        {
+          "title": "Verify patient identifier values displayed in NCH based on configuration done..."
+        },
+        {
+          "title": "Verify patient identifier values displayed in MDT based on configuration done..."
+        },
+        {
+          "title": "Validate that user is able to create, resume and submit patient to tumor boar..."
+        }
+      ],
+      "outgoingRelations": [
+        {
+          "relation": "implements",
+          "accessPattern": "relations | where('type', 'implements')"
+        },
+        {
+          "relation": "is related to",
+          "accessPattern": "relations | where('type', 'is related to')"
+        },
+        {
+          "relation": "relates to",
+          "accessPattern": "relations | where('type', 'relates to')"
+        },
+        {
+          "relation": "tests",
+          "accessPattern": "relations | where('type', 'tests')"
+        },
+        {
+          "relation": "found anomaly",
+          "accessPattern": "relations | where('type', 'found anomaly')"
+        }
+      ]
+    },
+    "Test Execution": {
+      "kqlQuery": "type:\"Test Execution\"",
+      "count": 301,
+      "fields": {
+        "title": {
+          "label": "title",
+          "dataType": "string",
+          "access": {
+            "plain": "title"
+          },
+          "exampleValues": [
+            "WORKFLOW TEST",
+            "Execution: 1.1.0 Test case 1",
+            "Informal Test Execution for GDL (NTB)",
+            "STAGE [OSC] [US] QC/HC testing nCH ver 3.8.0 [PI2 2025]",
+            "STAGE [OSC] [EU] QC/HC testing nCH ver 3.8.0 [PI2 2025]"
+          ]
+        },
+        "revision": {
+          "label": "revision",
+          "dataType": "string",
+          "access": {
+            "plain": "revision"
+          },
+          "uniqueValues": [
+            "1",
+            "10",
+            "11",
+            "12",
+            "14",
+            "15",
+            "17",
+            "2",
+            "20",
+            "21",
+            "34",
+            "5",
+            "6",
+            "7",
+            "9"
+          ]
+        },
+        "isControlled": {
+          "label": "isControlled",
+          "dataType": "string",
+          "access": {
+            "plain": "isControlled"
+          },
+          "uniqueValues": [
+            "False",
+            "True"
+          ]
+        },
+        "createdAt": {
+          "label": "createdAt",
+          "dataType": "string",
+          "access": {
+            "plain": "createdAt"
+          },
+          "exampleValues": [
+            "2025-12-18T13:13:20.405Z",
+            "2025-12-18T15:14:04.362Z",
+            "2026-01-04T18:42:08.759Z",
+            "2026-01-04T18:42:23.558Z",
+            "2026-01-04T18:42:23.602Z"
+          ]
+        },
+        "Steps": {
+          "label": "Steps",
+          "dataType": "string",
+          "access": {
+            "plain": "fieldValue.Steps"
+          },
+          "isCustomField": true,
+          "uniqueValues": [
+            "{'type': 'doc', 'content': [], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'heading', 'attrs': {'level': 2}, 'content': [{'text': 'Test run 1', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Status: FAILED', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 1:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Click on View Presentation button', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Presentation summary shall be opened', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'PASSED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 2:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Verify header contains all the required meeting and patient information’s', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'User shall able to see :', 'type': 'text'}]}, {'type': 'orderedList', 'attrs': {'order': 1}, 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Navify ClinicalHub logo', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Meeting Name', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Patient name', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'MRN number', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Date of birth', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Gender', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Requested by information', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Point of discussion', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Meeting Date and time', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Recommendation button', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Previous button', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Next button', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Dropdown icon', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Roche logo', 'type': 'text'}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Defects', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': '3624232', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'FAILED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 3:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Verify that Long Patient/Requested name is displayed as truncated', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Patient/Requested name shall displayed as truncated with ellipsis(...)', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'TODO', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'heading', 'attrs': {'level': 2}, 'content': [{'text': 'Test run 2', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Status: PASSED', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 1:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action 1 (MDT)', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Expected result 1 (MDT)', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'PASSED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 2:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action 2 (MDT)', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Expected result 2 (MDT)', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'PASSED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 3:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action 3 (MDT)', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Expected result 3 (MDT)', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'PASSED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'heading', 'attrs': {'level': 2}, 'content': [{'text': 'Test run 1', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Status: PASSED', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 1:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Generate ', 'type': 'text'}, {'text': 'Patient Case Report', 'type': 'text', 'marks': [{'type': 'strong'}]}, {'text': ' using template ', 'type': 'text'}, {'text': 'patient-case-report-template-reference-OncologicSummary.docx', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'n/a', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'The report shall contain the ', 'type': 'text'}, {'text': 'Oncologic Summary', 'type': 'text', 'marks': [{'type': 'strong'}]}, {'text': ' data.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Defects', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': '3624187', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'PASSED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 2:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Generate ', 'type': 'text'}, {'text': 'Patient Case Report', 'type': 'text', 'marks': [{'type': 'strong'}]}, {'text': ' using template ', 'type': 'text'}, {'text': 'conference-report-template-reference-OncologicSummary.docx', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'n/a', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'The report shall contain the ', 'type': 'text'}, {'text': 'Oncologic Summary', 'type': 'text', 'marks': [{'type': 'strong'}]}, {'text': ' data.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'PASSED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 3:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Generate ', 'type': 'text'}, {'text': 'Patient Case Report', 'type': 'text', 'marks': [{'type': 'strong'}]}, {'text': ' using template ', 'type': 'text'}, {'text': 'patient-case-template-reference-Reports-OncologicSummary.docx', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'n/a', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'The report shall contain the report data:', 'type': 'text'}]}, {'type': 'orderedList', 'attrs': {'order': 1}, 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Surgical Pathology', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'orderedList', 'attrs': {'order': 1}, 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Name,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Date of report,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Date of procedure,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Report type,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Author,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Notes,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Link,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Report is tracked', 'type': 'text'}]}]}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Genomic', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'orderedList', 'attrs': {'order': 1}, 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Name,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Date of report,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Date of procedure,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Report type,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Author,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Notes,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Link,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Report vendor,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Report is not tracked', 'type': 'text'}]}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'PASSED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 4:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Go to presentation and generate ', 'type': 'text'}, {'text': 'Patient Review Report', 'type': 'text', 'marks': [{'type': 'strong'}]}, {'text': ' using template ', 'type': 'text'}, {'text': 'patient-review-template-reference-Reports-OncologicSummary.docx', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'n/a', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'The report shall contain the report data:', 'type': 'text'}]}, {'type': 'orderedList', 'attrs': {'order': 1}, 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Surgical Pathology', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'orderedList', 'attrs': {'order': 1}, 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Name,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Date of report,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Date of procedure,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Report type,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Author,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Notes,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Link,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Report is tracked.', 'type': 'text'}]}]}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Genomic', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'orderedList', 'attrs': {'order': 1}, 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Name,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Date of report,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Date of procedure,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Report type,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Author,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Notes,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Link,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Report vendor', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Report is not tracked.', 'type': 'text'}]}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'PASSED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'heading', 'attrs': {'level': 2}, 'content': [{'text': 'Test run 2', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Status: PASSED', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 1:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Click on Patient count button for tumor board meeting created in pre-condition.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'User is directed to Meeting patient list page.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'PASSED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 2:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Click on Submit Patient button', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'User is able to see Submit patient to tumor board pop-up.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'PASSED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 3:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Click on Plus button present besides search patient input box', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'User is able to see Add new patient form.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'PASSED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 4:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Fill up all patient details and click on Add patient.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'User is able to submit all patient details and directed to simplified patient summary form with Care Team form displayed first.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'PASSED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 5:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Fill up all required details in the forms and click on confirm  button.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'User is directed to Preview page with all the details populated on the page.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'PASSED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 6:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Click on Submit button', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'User is able to submit patient to the tumor board meeting and re-directed to meeting patient list page where submitted patient details displayed in the list.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'PASSED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 7:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Click on Back button of header bar', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'User is navigated to Meeting list page and 2 count displayed in the Patient section of the meeting.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'PASSED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'heading', 'attrs': {'level': 2}, 'content': [{'text': 'Test run 3', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Status: PASSED', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 1:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Click Presentation Mode Button', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Presentation Mode should be activated. ', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Presentation should be in full screen mode and browser tooltip \"To exit full screen, press Esc\" should be visible. ', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'The presentation should include an attachment but the menu on the left side containing the document pages should not be visible.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Browser upper part and lower operating system bar shall not be visible.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'PASSED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 2:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Go to ', 'type': 'text'}, {'text': 'Clinical trial', 'type': 'text', 'marks': [{'type': 'strong'}]}, {'text': ' tab.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Presentation mode shall be enabled.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'PASSED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 3:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Go back to ', 'type': 'text'}, {'text': 'Patient review', 'type': 'text', 'marks': [{'type': 'strong'}]}, {'text': ' tab.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Presentation mode shall be enabled.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'PASSED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 4:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Go to the <Patient 2>', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Presentation mode shall be enabled.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'PASSED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 5:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Press the \"Exit presentation mode\" button.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Presentation Mode should be deactivated. Browser upper part and lower operating system bar should be visible.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'The presentation should include an attachment and the menu on the left side containing the document pages should be visible.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'PASSED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'heading', 'attrs': {'level': 2}, 'content': [{'text': 'Test run 4', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Status: PASSED', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 1:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Login into Tumor Board as customer admin user.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'User shall be logged in Tumor Board.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'PASSED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 2:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Click on the Analytics menu.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Analytics report is displayed.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'PASSED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 3:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Select the Date range and MDT Type and click apply.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Results are loaded based on the date range and MDT Type selected.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'PASSED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 4:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Click on PATIENT/MDT tab', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Tumor Board table is displayed with meeting records.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'PASSED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 5:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Click on sliding arrow and verify the details inside Tumor Board row.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'All patients assigned to the particular meeting.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'PASSED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'heading', 'attrs': {'level': 2}, 'content': [{'text': 'Test run 1', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Status: PASSED', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 1:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Generate ', 'type': 'text'}, {'text': 'Patient Case Report', 'type': 'text', 'marks': [{'type': 'strong'}]}, {'text': ' using template ', 'type': 'text'}, {'text': 'patient-case-report-template-reference-OncologicSummary.docx', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'n/a', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'The report shall contain the ', 'type': 'text'}, {'text': 'Oncologic Summary', 'type': 'text', 'marks': [{'type': 'strong'}]}, {'text': ' data.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'PASSED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 2:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Generate ', 'type': 'text'}, {'text': 'Patient Case Report', 'type': 'text', 'marks': [{'type': 'strong'}]}, {'text': ' using template ', 'type': 'text'}, {'text': 'conference-report-template-reference-OncologicSummary.docx', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'n/a', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'The report shall contain the ', 'type': 'text'}, {'text': 'Oncologic Summary', 'type': 'text', 'marks': [{'type': 'strong'}]}, {'text': ' data.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'PASSED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 3:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Generate ', 'type': 'text'}, {'text': 'Patient Case Report', 'type': 'text', 'marks': [{'type': 'strong'}]}, {'text': ' using template ', 'type': 'text'}, {'text': 'patient-case-template-reference-Reports-OncologicSummary.docx', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'n/a', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'The report shall contain the report data:', 'type': 'text'}]}, {'type': 'orderedList', 'attrs': {'order': 1}, 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Surgical Pathology', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'orderedList', 'attrs': {'order': 1}, 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Name,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Date of report,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Date of procedure,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Report type,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Author,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Notes,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Link,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Report is tracked', 'type': 'text'}]}]}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Genomic', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'orderedList', 'attrs': {'order': 1}, 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Name,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Date of report,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Date of procedure,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Report type,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Author,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Notes,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Link,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Report vendor,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Report is not tracked', 'type': 'text'}]}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'PASSED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 4:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Go to presentation and generate ', 'type': 'text'}, {'text': 'Patient Review Report', 'type': 'text', 'marks': [{'type': 'strong'}]}, {'text': ' using template ', 'type': 'text'}, {'text': 'patient-review-template-reference-Reports-OncologicSummary.docx', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'n/a', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'The report shall contain the report data:', 'type': 'text'}]}, {'type': 'orderedList', 'attrs': {'order': 1}, 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Surgical Pathology', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'orderedList', 'attrs': {'order': 1}, 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Name,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Date of report,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Date of procedure,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Report type,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Author,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Notes,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Link,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Report is tracked.', 'type': 'text'}]}]}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Genomic', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'orderedList', 'attrs': {'order': 1}, 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Name,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Date of report,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Date of procedure,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Report type,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Author,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Notes,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Link,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Report vendor', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Report is not tracked.', 'type': 'text'}]}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'PASSED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'heading', 'attrs': {'level': 2}, 'content': [{'text': 'Test run 2', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Status: FAILED', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 1:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Click on Patient count button for tumor board meeting created in pre-condition.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'User is directed to Meeting patient list page.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'PASSED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 2:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Click on Submit Patient button', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'User is able to see Submit patient to tumor board pop-up.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'PASSED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 3:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Click on Plus button present besides search patient input box', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'User is able to see Add new patient form.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Defects', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': '3623813', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'FAILED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 4:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Fill up all patient details and click on Add patient.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'User is able to submit all patient details and directed to simplified patient summary form with Care Team form displayed first.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'TODO', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 5:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Fill up all required details in the forms and click on confirm  button.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'User is directed to Preview page with all the details populated on the page.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'TODO', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 6:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Click on Submit button', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'User is able to submit patient to the tumor board meeting and re-directed to meeting patient list page where submitted patient details displayed in the list.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'TODO', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 7:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Click on Back button of header bar', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'User is navigated to Meeting list page and 2 count displayed in the Patient section of the meeting.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'TODO', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'paragraph', 'content': [{'text': 'Status: FAILED', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 1:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Click on Patient count button for tumor board meeting created in pre-condition.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'User is directed to Meeting patient list page.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'PASSED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 2:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Click on Submit Patient button', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'User is able to see Submit patient to tumor board pop-up.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'PASSED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 3:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Click on Plus button present besides search patient input box', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'User is able to see Add new patient form.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Defects', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': '3624231', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'BROKEN', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 4:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Fill up all patient details and click on Add patient.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'User is able to submit all patient details and directed to simplified patient summary form with Care Team form displayed first.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'FAILED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 5:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Fill up all required details in the forms and click on confirm  button.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'User is directed to Preview page with all the details populated on the page.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'FAILED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 6:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Click on Submit button', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'User is able to submit patient to the tumor board meeting and re-directed to meeting patient list page where submitted patient details displayed in the list.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'FAILED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 7:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Click on Back button of header bar', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'User is navigated to Meeting list page and 2 count displayed in the Patient section of the meeting.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'FAILED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'paragraph', 'content': [{'text': 'Status: PASSED', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 1:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action 1 (MDT)', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Expected result 1 (MDT)', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'PASSED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 2:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action 2 (MDT)', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Expected result 2 (MDT)', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'PASSED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 3:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action 3 (MDT)', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Expected result 3 (MDT)', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'PASSED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'paragraph', 'content': [{'text': 'Status: PASSED', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 1:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Click on View Presentation button', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Presentation summary shall be opened', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'PASSED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 2:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Verify header contains all the required meeting and patient information’s', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'User shall able to see :', 'type': 'text'}]}, {'type': 'orderedList', 'attrs': {'order': 1}, 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Navify ClinicalHub logo', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Meeting Name', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Patient name', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'MRN number', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Date of birth', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Gender', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Requested by information', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Point of discussion', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Meeting Date and time', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Recommendation button', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Previous button', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Next button', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Dropdown icon', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Roche logo', 'type': 'text'}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'PASSED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 3:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Verify that Long Patient/Requested name is displayed as truncated', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'N/A', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Patient/Requested name shall displayed as truncated with ellipsis(...)', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'PASSED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'paragraph', 'content': [{'text': 'Status: PASSED', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 1:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Generate ', 'type': 'text'}, {'text': 'Patient Case Report', 'type': 'text', 'marks': [{'type': 'strong'}]}, {'text': ' using template ', 'type': 'text'}, {'text': 'patient-case-report-template-reference-OncologicSummary.docx', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'n/a', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'The report shall contain the ', 'type': 'text'}, {'text': 'Oncologic Summary', 'type': 'text', 'marks': [{'type': 'strong'}]}, {'text': ' data.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'PASSED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 2:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Generate ', 'type': 'text'}, {'text': 'Patient Case Report', 'type': 'text', 'marks': [{'type': 'strong'}]}, {'text': ' using template ', 'type': 'text'}, {'text': 'conference-report-template-reference-OncologicSummary.docx', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'n/a', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'The report shall contain the ', 'type': 'text'}, {'text': 'Oncologic Summary', 'type': 'text', 'marks': [{'type': 'strong'}]}, {'text': ' data.', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'PASSED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 3:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Generate ', 'type': 'text'}, {'text': 'Patient Case Report', 'type': 'text', 'marks': [{'type': 'strong'}]}, {'text': ' using template ', 'type': 'text'}, {'text': 'patient-case-template-reference-Reports-OncologicSummary.docx', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'n/a', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'The report shall contain the report data:', 'type': 'text'}]}, {'type': 'orderedList', 'attrs': {'order': 1}, 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Surgical Pathology', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'orderedList', 'attrs': {'order': 1}, 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Name,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Date of report,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Date of procedure,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Report type,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Author,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Notes,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Link,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Report is tracked', 'type': 'text'}]}]}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Genomic', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'orderedList', 'attrs': {'order': 1}, 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Name,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Date of report,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Date of procedure,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Report type,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Author,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Notes,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Link,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Report vendor,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Report is not tracked', 'type': 'text'}]}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'PASSED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}, {'type': 'bulletList', 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Step 4:', 'type': 'text', 'marks': [{'type': 'strong'}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Action', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Go to presentation and generate ', 'type': 'text'}, {'text': 'Patient Review Report', 'type': 'text', 'marks': [{'type': 'strong'}]}, {'text': ' using template ', 'type': 'text'}, {'text': 'patient-review-template-reference-Reports-OncologicSummary.docx', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Data', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'n/a', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'The report shall contain the report data:', 'type': 'text'}]}, {'type': 'orderedList', 'attrs': {'order': 1}, 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Surgical Pathology', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'orderedList', 'attrs': {'order': 1}, 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Name,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Date of report,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Date of procedure,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Report type,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Author,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Notes,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Link,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Report is tracked.', 'type': 'text'}]}]}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Genomic', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'orderedList', 'attrs': {'order': 1}, 'content': [{'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Name,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Date of report,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Date of procedure,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Report type,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Author,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Notes,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Link,', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Report vendor', 'type': 'text'}]}]}, {'type': 'listItem', 'content': [{'type': 'paragraph', 'content': [{'text': 'Report is not tracked.', 'type': 'text'}]}]}]}]}]}, {'type': 'paragraph', 'content': [{'text': 'Actual result', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Comment', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'Status', 'type': 'text', 'marks': [{'type': 'strong'}]}]}, {'type': 'paragraph', 'content': [{'text': 'PASSED', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': '', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'paragraph', 'content': [{'text': 'Status: PASSED', 'type': 'text'}]}], 'version': 1}"
+          ],
+          "fillRate": "99%"
+        },
+        "Test_result": {
+          "label": "Test result",
+          "dataType": "string",
+          "access": {
+            "plain": "fieldValue.Test_result"
+          },
+          "isCustomField": true,
+          "uniqueValues": [
+            "FAIL",
+            "PASS"
+          ],
+          "fillRate": "99%"
+        },
+        "Environment": {
+          "label": "Environment",
+          "dataType": "string",
+          "access": {
+            "plain": "fieldValue.Environment"
+          },
+          "isCustomField": true,
+          "uniqueValues": [
+            "{'type': 'doc', 'content': [{'type': 'paragraph', 'content': [{'text': 'AU PROD', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'paragraph', 'content': [{'text': 'AU Prod', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'paragraph', 'content': [{'text': 'EU PROD', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'paragraph', 'content': [{'text': 'EU Prod', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'paragraph', 'content': [{'text': 'EU Stage', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'paragraph', 'content': [{'text': 'JP PROD', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'paragraph', 'content': [{'text': 'JP Prod', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'paragraph', 'content': [{'text': 'JP Stage', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'paragraph', 'content': [{'text': 'KR PROD', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'paragraph', 'content': [{'text': 'KR Prod', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'paragraph', 'content': [{'text': 'KR', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'paragraph', 'content': [{'text': 'QAINT', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'paragraph', 'content': [{'text': 'SG PROD', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'paragraph', 'content': [{'text': 'SG Prod', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'paragraph', 'content': [{'text': 'US PROD', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'paragraph', 'content': [{'text': 'US Prod', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'paragraph', 'content': [{'text': 'US Stage', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'paragraph', 'content': [{'text': 'qaint', 'type': 'text'}]}], 'version': 1}"
+          ],
+          "fillRate": "50%"
+        },
+        "Description": {
+          "label": "Description",
+          "dataType": "richText",
+          "access": {
+            "plain": "fieldValue.Description",
+            "rich": "~~fieldContent.Description"
+          },
+          "isCustomField": true,
+          "fillRate": "58%"
+        },
+        "Test_environments": {
+          "label": "Test environments",
+          "dataType": "string",
+          "access": {
+            "plain": "fieldValue.Test_environments"
+          },
+          "isCustomField": true,
+          "uniqueValues": [
+            "['EU-PROD']",
+            "['QAINT-nCH']",
+            "['STAGE-nCH']",
+            "['US-PROD']"
+          ],
+          "fillRate": "3%"
+        }
+      },
+      "sampleRecords": [
+        {
+          "title": "WORKFLOW TEST"
+        },
+        {
+          "title": "Execution: 1.1.0 Test case 1"
+        },
+        {
+          "title": "Informal Test Execution for GDL (NTB)",
+          "Steps": "{'type': 'doc', 'content': [], 'version': 1}",
+          "Test_result": "PASS"
+        }
+      ],
+      "outgoingRelations": [
+        {
+          "relation": "implements",
+          "accessPattern": "relations | where('type', 'implements')"
+        },
+        {
+          "relation": "is related to",
+          "accessPattern": "relations | where('type', 'is related to')"
+        },
+        {
+          "relation": "relates to",
+          "accessPattern": "relations | where('type', 'relates to')"
+        },
+        {
+          "relation": "tests",
+          "accessPattern": "relations | where('type', 'tests')"
+        },
+        {
+          "relation": "executes",
+          "accessPattern": "relations | where('type', 'executes')"
+        },
+        {
+          "relation": "found anomaly",
+          "accessPattern": "relations | where('type', 'found anomaly')"
+        }
+      ]
+    },
+    "Anomaly": {
+      "kqlQuery": "type:Anomaly",
+      "count": 157,
+      "fields": {
+        "title": {
+          "label": "title",
+          "dataType": "string",
+          "access": {
+            "plain": "title"
+          },
+          "exampleValues": [
+            "TEST 4",
+            "Simulation defect ketryx 1.2.0",
+            "Testing Iiv and Oiv",
+            "Defect found during testing Ketryx-1.2.0 and creted outside Xray and linked after",
+            "2 DEFECT release 1.0.0 (AIC)"
+          ]
+        },
+        "revision": {
+          "label": "revision",
+          "dataType": "string",
+          "access": {
+            "plain": "revision"
+          },
+          "uniqueValues": [
+            "1",
+            "11",
+            "12",
+            "13",
+            "14",
+            "18",
+            "2",
+            "20",
+            "21",
+            "23",
+            "26",
+            "3",
+            "4",
+            "43",
+            "5",
+            "53",
+            "8",
+            "9"
+          ]
+        },
+        "isControlled": {
+          "label": "isControlled",
+          "dataType": "string",
+          "access": {
+            "plain": "isControlled"
+          },
+          "uniqueValues": [
+            "False",
+            "True"
+          ]
+        },
+        "createdAt": {
+          "label": "createdAt",
+          "dataType": "string",
+          "access": {
+            "plain": "createdAt"
+          },
+          "exampleValues": [
+            "2026-01-04T18:43:46.548Z",
+            "2026-01-04T18:43:48.658Z",
+            "2026-01-04T18:43:48.797Z",
+            "2026-01-04T19:42:09.805Z",
+            "2026-01-04T19:43:04.474Z"
+          ]
+        },
+        "Description": {
+          "label": "Description",
+          "dataType": "richText",
+          "access": {
+            "plain": "fieldValue.Description",
+            "rich": "~~fieldContent.Description"
+          },
+          "isCustomField": true,
+          "fillRate": "90%"
+        },
+        "Environment": {
+          "label": "Environment",
+          "dataType": "string",
+          "access": {
+            "plain": "fieldValue.Environment"
+          },
+          "isCustomField": true,
+          "uniqueValues": [
+            "{'type': 'doc', 'content': [{'type': 'paragraph', 'content': [{'text': 'AUS PROD', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'paragraph', 'content': [{'text': 'All environments', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'paragraph', 'content': [{'text': 'DEVINT, QAINT, SGPROD', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'paragraph', 'content': [{'text': 'JP Stage - ', 'type': 'text'}, {'type': 'inlineCard', 'attrs': {'url': 'https://lifestrands.jpstbvpc-nch.stage-jp.clinicalhub.platform.navify.com/'}}, {'text': ' ', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'text': 'Customer - Lifestrands', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'paragraph', 'content': [{'text': 'JP Stage - ', 'type': 'text'}, {'type': 'inlineCard', 'attrs': {'url': 'https://lifestrands.jpstbvpc-nch.stage-jp.clinicalhub.platform.navify.com/'}}, {'text': ' ', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'paragraph', 'content': [{'text': 'QAINT, TBUPGR', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'paragraph', 'content': [{'text': 'TBUPGR', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'paragraph', 'content': [{'text': 'US Stage', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'paragraph', 'content': [{'text': 'devint, qaint', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'paragraph', 'content': [{'text': 'qaint', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'paragraph', 'content': [{'text': 'tbupgr', 'type': 'text'}]}, {'type': 'paragraph', 'content': [{'type': 'inlineCard', 'attrs': {'url': 'https://migration-ntb-nch-tbupgr2.tbupgr-nch.upgr.clinicalhub.platform.navify.com/'}}, {'text': ' ', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'paragraph', 'content': [{'text': 'tbupgr', 'type': 'text'}]}], 'version': 1}"
+          ],
+          "fillRate": "13%"
+        }
+      },
+      "sampleRecords": [
+        {
+          "title": "TEST 4"
+        },
+        {
+          "title": "Simulation defect ketryx 1.2.0"
+        },
+        {
+          "title": "Testing Iiv and Oiv"
+        }
+      ],
+      "outgoingRelations": [
+        {
+          "relation": "implements",
+          "accessPattern": "relations | where('type', 'implements')"
+        },
+        {
+          "relation": "is related to",
+          "accessPattern": "relations | where('type', 'is related to')"
+        },
+        {
+          "relation": "relates to",
+          "accessPattern": "relations | where('type', 'relates to')"
+        },
+        {
+          "relation": "executes",
+          "accessPattern": "relations | where('type', 'executes')"
+        },
+        {
+          "relation": "affects",
+          "accessPattern": "relations | where('type', 'affects')"
+        }
+      ]
+    },
+    "Software Requirement": {
+      "kqlQuery": "type:\"Software Requirement\"",
+      "count": 151,
+      "fields": {
+        "title": {
+          "label": "title",
+          "dataType": "string",
+          "access": {
+            "plain": "title"
+          },
+          "exampleValues": [
+            "Verify if all the columns are displayed for the Clinical significance and RNA Expression sub tables ",
+            "Verify if all the columns are displayed for Biological origin sub-tables under CGPD section for Japa",
+            "To verify if all the columns are displayed for master table under CGPD tab for Japanese customers",
+            "Check whether the oncology treatment records from the patient summary are being displayed correctly ",
+            "Special characters validation during TB Type creation"
+          ]
+        },
+        "revision": {
+          "label": "revision",
+          "dataType": "string",
+          "access": {
+            "plain": "revision"
+          },
+          "uniqueValues": [
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "2",
+            "4",
+            "44",
+            "5",
+            "6",
+            "62",
+            "7",
+            "8",
+            "9"
+          ]
+        },
+        "isControlled": {
+          "label": "isControlled",
+          "dataType": "string",
+          "access": {
+            "plain": "isControlled"
+          },
+          "uniqueValues": [
+            "False",
+            "True"
+          ]
+        },
+        "createdAt": {
+          "label": "createdAt",
+          "dataType": "string",
+          "access": {
+            "plain": "createdAt"
+          },
+          "exampleValues": [
+            "2025-12-16T12:00:07.453Z",
+            "2025-12-16T12:00:07.493Z",
+            "2025-12-16T12:00:07.527Z",
+            "2025-12-16T12:00:07.564Z",
+            "2025-12-16T12:00:07.593Z"
+          ]
+        },
+        "Description": {
+          "label": "Description",
+          "dataType": "richText",
+          "access": {
+            "plain": "fieldValue.Description",
+            "rich": "~~fieldContent.Description"
+          },
+          "isCustomField": true,
+          "fillRate": "60%"
+        },
+        "Requirement_type": {
+          "label": "Requirement type",
+          "dataType": "string",
+          "access": {
+            "plain": "fieldValue.Requirement_type"
+          },
+          "isCustomField": true,
+          "uniqueValues": [
+            "SYSTEM"
+          ],
+          "fillRate": "85%"
+        }
+      },
+      "sampleRecords": [
+        {
+          "title": "Verify if all the columns are displayed for the Clinical significance and RNA..."
+        },
+        {
+          "title": "Verify if all the columns are displayed for Biological origin sub-tables unde..."
+        },
+        {
+          "title": "To verify if all the columns are displayed for master table under CGPD tab fo..."
+        }
+      ],
+      "outgoingRelations": [
+        {
+          "relation": "implements",
+          "accessPattern": "relations | where('type', 'implements')"
+        },
+        {
+          "relation": "is related to",
+          "accessPattern": "relations | where('type', 'is related to')"
+        },
+        {
+          "relation": "has parent",
+          "accessPattern": "relations | where('type', 'has parent')"
+        },
+        {
+          "relation": "relates to",
+          "accessPattern": "relations | where('type', 'relates to')"
+        },
+        {
+          "relation": "tests",
+          "accessPattern": "relations | where('type', 'tests')"
+        },
+        {
+          "relation": "is impacted by",
+          "accessPattern": "relations | where('type', 'is impacted by')"
+        },
+        {
+          "relation": "executes",
+          "accessPattern": "relations | where('type', 'executes')"
+        }
+      ]
+    },
+    "Test Plan": {
+      "kqlQuery": "type:\"Test Plan\"",
+      "count": 55,
+      "fields": {
+        "title": {
+          "label": "title",
+          "dataType": "string",
+          "access": {
+            "plain": "title"
+          },
+          "exampleValues": [
+            "PROD QC/HC testing nCH ver 3.8.0 [PI2 2025]",
+            "Informal testing nCH after 1s iteration ver. 3.8.0",
+            "Informal testing nCH after 2nd iteration ver. 3.8.0 [PI2 2025]",
+            "navify Clinical Hub- 3.8.0",
+            "Informal testing nCH before ver. 3.8.0 release [PI2 2025]"
+          ]
+        },
+        "revision": {
+          "label": "revision",
+          "dataType": "string",
+          "access": {
+            "plain": "revision"
+          },
+          "uniqueValues": [
+            "10",
+            "11",
+            "12",
+            "17",
+            "18",
+            "20",
+            "30",
+            "4",
+            "5",
+            "7",
+            "8",
+            "9"
+          ]
+        },
+        "isControlled": {
+          "label": "isControlled",
+          "dataType": "string",
+          "access": {
+            "plain": "isControlled"
+          },
+          "uniqueValues": [
+            "False"
+          ]
+        },
+        "createdAt": {
+          "label": "createdAt",
+          "dataType": "string",
+          "access": {
+            "plain": "createdAt"
+          },
+          "exampleValues": [
+            "2025-12-27T21:47:24.059Z",
+            "2026-01-04T18:41:48.107Z",
+            "2026-01-04T18:42:07.043Z",
+            "2026-01-04T18:42:15.959Z",
+            "2026-01-04T18:42:16.936Z"
+          ]
+        },
+        "Description": {
+          "label": "Description",
+          "dataType": "richText",
+          "access": {
+            "plain": "fieldValue.Description",
+            "rich": "~~fieldContent.Description"
+          },
+          "isCustomField": true,
+          "fillRate": "47%"
+        },
+        "Environment": {
+          "label": "Environment",
+          "dataType": "string",
+          "access": {
+            "plain": "fieldValue.Environment"
+          },
+          "isCustomField": true,
+          "uniqueValues": [
+            "{'type': 'doc', 'content': [{'type': 'paragraph', 'content': [{'text': 'Patient Journey 1.24.0, Patient List 1.26.0, Patient Summary 1.26.0, Reports 1.26.0', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'paragraph', 'content': [{'text': 'QAINT', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'paragraph', 'content': [{'text': 'TBUPGR', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'paragraph', 'content': [{'text': 'TEST2', 'type': 'text'}]}], 'version': 1}",
+            "{'type': 'doc', 'content': [{'type': 'paragraph', 'content': [{'text': 'one and two', 'type': 'text'}]}], 'version': 1}"
+          ],
+          "fillRate": "15%"
+        }
+      },
+      "sampleRecords": [
+        {
+          "title": "PROD QC/HC testing nCH ver 3.8.0 [PI2 2025]"
+        },
+        {
+          "title": "Informal testing nCH after 1s iteration ver. 3.8.0"
+        },
+        {
+          "title": "Informal testing nCH after 2nd iteration ver. 3.8.0 [PI2 2025]"
+        }
+      ],
+      "outgoingRelations": [
+        {
+          "relation": "implements",
+          "accessPattern": "relations | where('type', 'implements')"
+        },
+        {
+          "relation": "tests",
+          "accessPattern": "relations | where('type', 'tests')"
+        },
+        {
+          "relation": "contains",
+          "accessPattern": "relations | where('type', 'contains')"
+        }
+      ]
+    },
+    "Requirement": {
+      "kqlQuery": "type:Requirement",
+      "count": 42,
+      "fields": {
+        "title": {
+          "label": "title",
+          "dataType": "string",
+          "access": {
+            "plain": "title"
+          },
+          "exampleValues": [
+            "CR AI chatbot",
+            "AI driven, CGP summary for patients under through clinicians.",
+            "Enable Patient Creation and Clinical Data Entry from MDT Meeting Management Workflow",
+            "Support for Multiple and Configurable Patient Identifiers in nCH",
+            "Simplify Tumor Board Summary and Oncologic Summary Cards"
+          ]
+        },
+        "revision": {
+          "label": "revision",
+          "dataType": "string",
+          "access": {
+            "plain": "revision"
+          },
+          "uniqueValues": [
+            "1",
+            "10",
+            "11",
+            "18",
+            "2",
+            "23",
+            "24",
+            "3",
+            "5",
+            "9"
+          ]
+        },
+        "isControlled": {
+          "label": "isControlled",
+          "dataType": "string",
+          "access": {
+            "plain": "isControlled"
+          },
+          "uniqueValues": [
+            "False",
+            "True"
+          ]
+        },
+        "createdAt": {
+          "label": "createdAt",
+          "dataType": "string",
+          "access": {
+            "plain": "createdAt"
+          },
+          "exampleValues": [
+            "2025-12-22T11:09:14.913Z",
+            "2026-01-04T18:43:25.478Z",
+            "2026-01-04T19:42:17.609Z",
+            "2026-01-04T19:42:17.667Z",
+            "2026-01-04T19:42:20.025Z"
+          ]
+        },
+        "Description": {
+          "label": "Description",
+          "dataType": "richText",
+          "access": {
+            "plain": "fieldValue.Description",
+            "rich": "~~fieldContent.Description"
+          },
+          "isCustomField": true,
+          "fillRate": "29%"
+        },
+        "Requirement_type": {
+          "label": "Requirement type",
+          "dataType": "string",
+          "access": {
+            "plain": "fieldValue.Requirement_type"
+          },
+          "isCustomField": true,
+          "uniqueValues": [
+            "USER"
+          ],
+          "fillRate": "98%"
+        },
+        "Environment": {
+          "label": "Environment",
+          "dataType": "string",
+          "access": {
+            "plain": "fieldValue.Environment"
+          },
+          "isCustomField": true,
+          "uniqueValues": [
+            "{'type': 'doc', 'content': [], 'version': 1}"
+          ],
+          "fillRate": "2%"
+        }
+      },
+      "sampleRecords": [
+        {
+          "title": "CR AI chatbot"
+        },
+        {
+          "title": "AI driven, CGP summary for patients under through clinicians.",
+          "Requirement_type": "USER"
+        },
+        {
+          "title": "Enable Patient Creation and Clinical Data Entry from MDT Meeting Management W...",
+          "Requirement_type": "USER"
+        }
+      ]
+    },
+    "Ketryx Risk": {
+      "kqlQuery": "type:\"Ketryx Risk\"",
+      "count": 7,
+      "fields": {
+        "title": {
+          "label": "title",
+          "dataType": "string",
+          "access": {
+            "plain": "title"
+          },
+          "uniqueValues": [
+            "Changes in the code introduced by HyperCare Releases and Hotfixes may not be reflected in nCH 3.8.0",
+            "Joey - Simulated Release",
+            "Limited availability of models with Gallileo",
+            "Multiple test failures on QAINT shown in Grafana - risk to OSC 3.7.4 deployment",
+            "Risk connected with defects in the release Ketryx-1.0.0",
+            "Test"
+          ]
+        },
+        "revision": {
+          "label": "revision",
+          "dataType": "string",
+          "access": {
+            "plain": "revision"
+          },
+          "uniqueValues": [
+            "1",
+            "11",
+            "13",
+            "2",
+            "3",
+            "9"
+          ]
+        },
+        "isControlled": {
+          "label": "isControlled",
+          "dataType": "string",
+          "access": {
+            "plain": "isControlled"
+          },
+          "uniqueValues": [
+            "False",
+            "True"
+          ]
+        },
+        "createdAt": {
+          "label": "createdAt",
+          "dataType": "string",
+          "access": {
+            "plain": "createdAt"
+          },
+          "uniqueValues": [
+            "2026-01-04T18:42:24.577Z",
+            "2026-01-04T18:42:27.266Z",
+            "2026-01-04T18:42:45.579Z",
+            "2026-01-04T18:43:48.749Z",
+            "2026-01-07T10:57:07.647Z",
+            "2026-01-09T05:59:09.713Z",
+            "2026-01-09T06:25:41.301Z"
+          ]
+        },
+        "Description": {
+          "label": "Description",
+          "dataType": "richText",
+          "access": {
+            "plain": "fieldValue.Description",
+            "rich": "~~fieldContent.Description"
+          },
+          "isCustomField": true,
+          "fillRate": "57%"
+        }
+      },
+      "sampleRecords": [
+        {
+          "title": "Changes in the code introduced by HyperCare Releases and Hotfixes may not be ..."
+        },
+        {
+          "title": "Multiple test failures on QAINT shown in Grafana - risk to OSC 3.7.4 deployment"
+        },
+        {
+          "title": "Limited availability of models with Gallileo"
+        }
+      ]
+    },
+    "Long-Lived Document": {
+      "kqlQuery": "type:\"Long-Lived Document\"",
+      "count": 2,
+      "fields": {
+        "title": {
+          "label": "title",
+          "dataType": "string",
+          "access": {
+            "plain": "title"
+          },
+          "uniqueValues": [
+            "DPIA - Roche Sample.pdf",
+            "TEMPLATE - SBOM Software Bill of Materials.pdf"
+          ]
+        },
+        "revision": {
+          "label": "revision",
+          "dataType": "string",
+          "access": {
+            "plain": "revision"
+          },
+          "uniqueValues": [
+            "2",
+            "3"
+          ]
+        },
+        "isControlled": {
+          "label": "isControlled",
+          "dataType": "string",
+          "access": {
+            "plain": "isControlled"
+          },
+          "uniqueValues": [
+            "False"
+          ]
+        },
+        "createdAt": {
+          "label": "createdAt",
+          "dataType": "string",
+          "access": {
+            "plain": "createdAt"
+          },
+          "uniqueValues": [
+            "2026-01-09T00:39:21.423Z",
+            "2026-01-13T16:55:07.465Z"
+          ]
+        }
+      },
+      "sampleRecords": [
+        {
+          "title": "DPIA - Roche Sample.pdf"
+        },
+        {
+          "title": "TEMPLATE - SBOM Software Bill of Materials.pdf"
+        }
+      ]
+    },
+    "Pointwise Document": {
+      "kqlQuery": "type:\"Pointwise Document\"",
+      "count": 2,
+      "fields": {
+        "title": {
+          "label": "title",
+          "dataType": "string",
+          "access": {
+            "plain": "title"
+          },
+          "uniqueValues": [
+            "SBOM Software Bill of Materials.pdf",
+            "SDCR Change Form.pdf"
+          ]
+        },
+        "revision": {
+          "label": "revision",
+          "dataType": "string",
+          "access": {
+            "plain": "revision"
+          },
+          "uniqueValues": [
+            "2",
+            "3"
+          ]
+        },
+        "isControlled": {
+          "label": "isControlled",
+          "dataType": "string",
+          "access": {
+            "plain": "isControlled"
+          },
+          "uniqueValues": [
+            "False"
+          ]
+        },
+        "createdAt": {
+          "label": "createdAt",
+          "dataType": "string",
+          "access": {
+            "plain": "createdAt"
+          },
+          "uniqueValues": [
+            "2026-01-09T00:57:28.783Z",
+            "2026-01-09T22:22:48.452Z"
+          ]
+        }
+      },
+      "sampleRecords": [
+        {
+          "title": "SBOM Software Bill of Materials.pdf"
+        },
+        {
+          "title": "SDCR Change Form.pdf"
+        }
+      ]
+    }
+  },
+  "relationTypes": [
+    {
+      "relationType": "tests",
+      "fromTypes": [
+        "Software Requirement",
+        "Task",
+        "Test Plan",
+        "Test Case",
+        "Test Execution"
+      ],
+      "toTypes": [],
+      "count": 747,
+      "accessPattern": "relations | where('type', 'tests')"
+    },
+    {
+      "relationType": "is related to",
+      "fromTypes": [
+        "Software Requirement",
+        "Task",
+        "Anomaly",
+        "Test Case",
+        "Test Execution"
+      ],
+      "toTypes": [],
+      "count": 174,
+      "accessPattern": "relations | where('type', 'is related to')"
+    },
+    {
+      "relationType": "implements",
+      "fromTypes": [
+        "Software Requirement",
+        "Task",
+        "Test Plan",
+        "Anomaly",
+        "Test Case",
+        "Test Execution"
+      ],
+      "toTypes": [],
+      "count": 134,
+      "accessPattern": "relations | where('type', 'implements')"
+    },
+    {
+      "relationType": "found anomaly",
+      "fromTypes": [
+        "Test Execution",
+        "Test Case"
+      ],
+      "toTypes": [],
+      "count": 114,
+      "accessPattern": "relations | where('type', 'found anomaly')"
+    },
+    {
+      "relationType": "relates to",
+      "fromTypes": [
+        "Software Requirement",
+        "Task",
+        "Anomaly",
+        "Test Case",
+        "Test Execution"
+      ],
+      "toTypes": [],
+      "count": 107,
+      "accessPattern": "relations | where('type', 'relates to')"
+    },
+    {
+      "relationType": "contains",
+      "fromTypes": [
+        "Test Plan"
+      ],
+      "toTypes": [],
+      "count": 23,
+      "accessPattern": "relations | where('type', 'contains')"
+    },
+    {
+      "relationType": "executes",
+      "fromTypes": [
+        "Software Requirement",
+        "Anomaly",
+        "Test Execution"
+      ],
+      "toTypes": [],
+      "count": 18,
+      "accessPattern": "relations | where('type', 'executes')"
+    },
+    {
+      "relationType": "affects",
+      "fromTypes": [
+        "Anomaly"
+      ],
+      "toTypes": [],
+      "count": 9,
+      "accessPattern": "relations | where('type', 'affects')"
+    },
+    {
+      "relationType": "has parent",
+      "fromTypes": [
+        "Software Requirement"
+      ],
+      "toTypes": [],
+      "count": 4,
+      "accessPattern": "relations | where('type', 'has parent')"
+    },
+    {
+      "relationType": "is impacted by",
+      "fromTypes": [
+        "Software Requirement"
+      ],
+      "toTypes": [],
+      "count": 1,
+      "accessPattern": "relations | where('type', 'is impacted by')"
+    }
+  ]
+}

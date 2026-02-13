@@ -1,0 +1,357 @@
+<?xml version="1.0" ?>
+<w:hdr xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" mc:Ignorable="w14 wp14 w15">
+  <w:p>
+    <w:pPr>
+      <w:pStyle w:val="Normal"/>
+      <w:tabs>
+        <w:tab w:val="clear" w:pos="720"/>
+        <w:tab w:val="center" w:pos="4680" w:leader="none"/>
+        <w:tab w:val="right" w:pos="9360" w:leader="none"/>
+        <w:tab w:val="right" w:pos="9630" w:leader="none"/>
+      </w:tabs>
+      <w:spacing w:lineRule="auto" w:line="240" w:before="0" w:after="60"/>
+      <w:ind w:right="-331"/>
+      <w:rPr>
+        <w:rFonts w:ascii="Roche" w:hAnsi="Roche" w:eastAsia="Roche" w:cs="Roche"/>
+      </w:rPr>
+    </w:pPr>
+    <w:r>
+      <w:rPr>
+        <w:rFonts w:eastAsia="Roche" w:cs="Roche" w:ascii="Roche" w:hAnsi="Roche"/>
+      </w:rPr>
+    </w:r>
+  </w:p>
+  <w:p>
+    <w:pPr>
+      <w:pStyle w:val="Normal"/>
+      <w:tabs>
+        <w:tab w:val="clear" w:pos="720"/>
+        <w:tab w:val="center" w:pos="4680" w:leader="none"/>
+        <w:tab w:val="right" w:pos="9360" w:leader="none"/>
+        <w:tab w:val="right" w:pos="9630" w:leader="none"/>
+      </w:tabs>
+      <w:spacing w:lineRule="auto" w:line="240" w:before="0" w:after="60"/>
+      <w:ind w:right="-331"/>
+      <w:rPr>
+        <w:rFonts w:ascii="Roche" w:hAnsi="Roche" w:eastAsia="Roche" w:cs="Roche"/>
+        <w:sz w:val="2"/>
+        <w:szCs w:val="2"/>
+      </w:rPr>
+    </w:pPr>
+    <w:r>
+      <w:rPr>
+        <w:rFonts w:eastAsia="Roche" w:cs="Roche" w:ascii="Roche" w:hAnsi="Roche"/>
+        <w:sz w:val="2"/>
+        <w:szCs w:val="2"/>
+      </w:rPr>
+    </w:r>
+  </w:p>
+  <w:tbl>
+    <w:tblPr>
+      <w:tblStyle w:val="afe"/>
+      <w:tblW w:w="9530" w:type="dxa"/>
+      <w:jc w:val="center"/>
+      <w:tblInd w:w="0" w:type="dxa"/>
+      <w:tblLayout w:type="fixed"/>
+      <w:tblCellMar>
+        <w:top w:w="0" w:type="dxa"/>
+        <w:left w:w="43" w:type="dxa"/>
+        <w:bottom w:w="0" w:type="dxa"/>
+        <w:right w:w="43" w:type="dxa"/>
+      </w:tblCellMar>
+      <w:tblLook w:val="0400" w:noHBand="0" w:noVBand="1" w:firstColumn="0" w:lastRow="0" w:lastColumn="0" w:firstRow="0"/>
+    </w:tblPr>
+    <w:tblGrid>
+      <w:gridCol w:w="8270"/>
+      <w:gridCol w:w="1259"/>
+    </w:tblGrid>
+    <w:tr>
+      <w:trPr>
+        <w:tblHeader w:val="true"/>
+        <w:trHeight w:val="442" w:hRule="atLeast"/>
+      </w:trPr>
+      <w:tc>
+        <w:tcPr>
+          <w:tcW w:w="8270" w:type="dxa"/>
+          <w:vMerge w:val="restart"/>
+          <w:tcBorders>
+            <w:top w:val="single" w:sz="8" w:space="0" w:color="000000"/>
+            <w:left w:val="single" w:sz="8" w:space="0" w:color="000000"/>
+            <w:bottom w:val="single" w:sz="8" w:space="0" w:color="000000"/>
+            <w:right w:val="single" w:sz="8" w:space="0" w:color="000000"/>
+          </w:tcBorders>
+          <w:vAlign w:val="center"/>
+        </w:tcPr>
+        <w:p>
+          <w:pPr>
+            <w:pStyle w:val="Normal"/>
+            <w:rPr/>
+          </w:pPr>
+          <w:r>
+            <w:rPr/>
+            <w:drawing>
+              <wp:anchor behindDoc="1" distT="0" distB="0" distL="114300" distR="114300" simplePos="0" locked="0" layoutInCell="1" allowOverlap="1" relativeHeight="8">
+                <wp:simplePos x="0" y="0"/>
+                <wp:positionH relativeFrom="column">
+                  <wp:posOffset>95250</wp:posOffset>
+                </wp:positionH>
+                <wp:positionV relativeFrom="paragraph">
+                  <wp:posOffset>635</wp:posOffset>
+                </wp:positionV>
+                <wp:extent cx="648970" cy="438785"/>
+                <wp:effectExtent l="0" t="0" r="0" b="0"/>
+                <wp:wrapSquare wrapText="bothSides"/>
+                <wp:docPr id="3" name="Image2" descr=""/>
+                <wp:cNvGraphicFramePr>
+                  <a:graphicFrameLocks xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" noChangeAspect="1"/>
+                </wp:cNvGraphicFramePr>
+                <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+                  <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                    <pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                      <pic:nvPicPr>
+                        <pic:cNvPr id="3" name="Image2" descr=""/>
+                        <pic:cNvPicPr>
+                          <a:picLocks noChangeAspect="1" noChangeArrowheads="1"/>
+                        </pic:cNvPicPr>
+                      </pic:nvPicPr>
+                      <pic:blipFill>
+                        <a:blip r:embed="rId1"/>
+                        <a:stretch>
+                          <a:fillRect/>
+                        </a:stretch>
+                      </pic:blipFill>
+                      <pic:spPr bwMode="auto">
+                        <a:xfrm>
+                          <a:off x="0" y="0"/>
+                          <a:ext cx="648970" cy="438785"/>
+                        </a:xfrm>
+                        <a:prstGeom prst="rect">
+                          <a:avLst/>
+                        </a:prstGeom>
+                        <a:noFill/>
+                      </pic:spPr>
+                    </pic:pic>
+                  </a:graphicData>
+                </a:graphic>
+              </wp:anchor>
+            </w:drawing>
+          </w:r>
+        </w:p>
+        <w:p>
+          <w:pPr>
+            <w:pStyle w:val="Normal"/>
+            <w:spacing w:lineRule="auto" w:line="240" w:before="40" w:after="40"/>
+            <w:rPr>
+              <w:sz w:val="18"/>
+              <w:szCs w:val="18"/>
+            </w:rPr>
+          </w:pPr>
+          <w:r>
+            <w:rPr>
+              <w:sz w:val="18"/>
+              <w:szCs w:val="18"/>
+            </w:rPr>
+            <w:t>navify Clinical Hub (nCH)</w:t>
+          </w:r>
+          <w:r>
+            <w:rPr>
+              <w:color w:val="FF0000"/>
+              <w:sz w:val="18"/>
+              <w:szCs w:val="18"/>
+            </w:rPr>
+            <w:t xml:space="preserve"> </w:t>
+          </w:r>
+        </w:p>
+      </w:tc>
+      <w:tc>
+        <w:tcPr>
+          <w:tcW w:w="1259" w:type="dxa"/>
+          <w:vMerge w:val="restart"/>
+          <w:tcBorders>
+            <w:top w:val="single" w:sz="8" w:space="0" w:color="000000"/>
+            <w:bottom w:val="single" w:sz="8" w:space="0" w:color="000000"/>
+            <w:right w:val="single" w:sz="8" w:space="0" w:color="000000"/>
+          </w:tcBorders>
+          <w:vAlign w:val="center"/>
+        </w:tcPr>
+        <w:p>
+          <w:pPr>
+            <w:pStyle w:val="Normal"/>
+            <w:tabs>
+              <w:tab w:val="clear" w:pos="720"/>
+              <w:tab w:val="center" w:pos="4680" w:leader="none"/>
+              <w:tab w:val="right" w:pos="9360" w:leader="none"/>
+            </w:tabs>
+            <w:spacing w:lineRule="auto" w:line="240" w:before="40" w:after="40"/>
+            <w:ind w:hanging="53" w:left="53"/>
+            <w:rPr>
+              <w:b/>
+              <w:bCs/>
+            </w:rPr>
+          </w:pPr>
+          <w:r>
+            <w:rPr>
+              <w:b/>
+              <w:bCs/>
+            </w:rPr>
+            <w:t xml:space="preserve">Page </w:t>
+            <w:br/>
+          </w:r>
+          <w:r>
+            <w:rPr>
+              <w:b/>
+              <w:bCs/>
+            </w:rPr>
+            <w:fldChar w:fldCharType="begin"/>
+          </w:r>
+          <w:r>
+            <w:rPr>
+              <w:b/>
+              <w:bCs/>
+            </w:rPr>
+            <w:instrText xml:space="preserve"> PAGE </w:instrText>
+          </w:r>
+          <w:r>
+            <w:rPr>
+              <w:b/>
+              <w:bCs/>
+            </w:rPr>
+            <w:fldChar w:fldCharType="separate"/>
+          </w:r>
+          <w:r>
+            <w:rPr>
+              <w:b/>
+              <w:bCs/>
+            </w:rPr>
+            <w:t>11</w:t>
+          </w:r>
+          <w:r>
+            <w:rPr>
+              <w:b/>
+              <w:bCs/>
+            </w:rPr>
+            <w:fldChar w:fldCharType="end"/>
+          </w:r>
+          <w:r>
+            <w:rPr>
+              <w:b/>
+              <w:bCs/>
+            </w:rPr>
+            <w:t xml:space="preserve"> of </w:t>
+          </w:r>
+          <w:r>
+            <w:rPr>
+              <w:b/>
+              <w:bCs/>
+            </w:rPr>
+            <w:fldChar w:fldCharType="begin"/>
+          </w:r>
+          <w:r>
+            <w:rPr>
+              <w:b/>
+              <w:bCs/>
+            </w:rPr>
+            <w:instrText xml:space="preserve"> NUMPAGES </w:instrText>
+          </w:r>
+          <w:r>
+            <w:rPr>
+              <w:b/>
+              <w:bCs/>
+            </w:rPr>
+            <w:fldChar w:fldCharType="separate"/>
+          </w:r>
+          <w:r>
+            <w:rPr>
+              <w:b/>
+              <w:bCs/>
+            </w:rPr>
+            <w:t>12</w:t>
+          </w:r>
+          <w:r>
+            <w:rPr>
+              <w:b/>
+              <w:bCs/>
+            </w:rPr>
+            <w:fldChar w:fldCharType="end"/>
+          </w:r>
+        </w:p>
+      </w:tc>
+    </w:tr>
+    <w:tr>
+      <w:trPr>
+        <w:tblHeader w:val="true"/>
+        <w:trHeight w:val="442" w:hRule="atLeast"/>
+      </w:trPr>
+      <w:tc>
+        <w:tcPr>
+          <w:tcW w:w="8270" w:type="dxa"/>
+          <w:vMerge w:val="continue"/>
+          <w:tcBorders>
+            <w:top w:val="single" w:sz="8" w:space="0" w:color="000000"/>
+            <w:left w:val="single" w:sz="8" w:space="0" w:color="000000"/>
+            <w:bottom w:val="single" w:sz="8" w:space="0" w:color="000000"/>
+            <w:right w:val="single" w:sz="8" w:space="0" w:color="000000"/>
+          </w:tcBorders>
+          <w:vAlign w:val="center"/>
+        </w:tcPr>
+        <w:p>
+          <w:pPr>
+            <w:pStyle w:val="Normal"/>
+            <w:widowControl w:val="false"/>
+            <w:pBdr/>
+            <w:rPr>
+              <w:b/>
+              <w:bCs/>
+            </w:rPr>
+          </w:pPr>
+          <w:r>
+            <w:rPr>
+              <w:b/>
+              <w:bCs/>
+            </w:rPr>
+          </w:r>
+        </w:p>
+      </w:tc>
+      <w:tc>
+        <w:tcPr>
+          <w:tcW w:w="1259" w:type="dxa"/>
+          <w:vMerge w:val="continue"/>
+          <w:tcBorders>
+            <w:top w:val="single" w:sz="8" w:space="0" w:color="000000"/>
+            <w:bottom w:val="single" w:sz="8" w:space="0" w:color="000000"/>
+            <w:right w:val="single" w:sz="8" w:space="0" w:color="000000"/>
+          </w:tcBorders>
+          <w:vAlign w:val="center"/>
+        </w:tcPr>
+        <w:p>
+          <w:pPr>
+            <w:pStyle w:val="Normal"/>
+            <w:widowControl w:val="false"/>
+            <w:pBdr/>
+            <w:rPr>
+              <w:b/>
+              <w:bCs/>
+            </w:rPr>
+          </w:pPr>
+          <w:r>
+            <w:rPr>
+              <w:b/>
+              <w:bCs/>
+            </w:rPr>
+          </w:r>
+        </w:p>
+      </w:tc>
+    </w:tr>
+  </w:tbl>
+  <w:p>
+    <w:pPr>
+      <w:pStyle w:val="Normal"/>
+      <w:spacing w:lineRule="auto" w:line="240" w:before="40" w:after="40"/>
+      <w:ind w:right="43"/>
+      <w:rPr/>
+    </w:pPr>
+    <w:r>
+      <w:rPr/>
+    </w:r>
+  </w:p>
+</w:hdr>

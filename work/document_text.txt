@@ -1,0 +1,448 @@
+Defect Summary Report
+Document History
+Version
+Description
+01
+Initial release
+Table of Content
+1
+Document History
+3
+2
+Glossary
+3
+3
+Product Description
+3
+4
+Release Purpose
+3
+5
+Release Summary
+3
+6
+Release History
+4
+7
+System Requirements
+4
+7.1
+Prerequisites
+4
+7.2
+Hardware Compatibility
+4
+7.3
+Compatibility
+4
+8
+Release Scope
+5
+8.1
+New Functionality
+5
+8.2
+Changes
+5
+8.3
+Resolved Issues
+5
+8.4
+Known Issues and Workaround
+5
+9
+Confirmation of Verification
+5
+10
+Installation Instructions
+5
+11
+References
+5
+Purpose
+This Defect Summary Report summarizes the Defects found in the navify Clinical Hub (nCH) 1.2.0 in accordance with MQMS-D&amp;D-GSP-05 Defect Management.
+Scope
+This document covers Accepted, Resolved and Rejected Defects applicable for:
+navify Clinical Hub (nCH) 1.2.0
+MDT – Meeting Management 1.2.0
+OSC – Shared Capabilities 1.2.0
+Summary
+Table 1 below summarizes all defects in states Accepted, Resolved or Rejected, found in the 
+current navify Clinical Hub (nCH) 1.2.0.
+Table 1: Summary of the number of defects 
+Accepted
+Potential product risk related
+Resolved
+Rejected
+yes
+no
+Number of Defects
+1
+3
+69
+18
+Defects
+Accepted Defects
+Table 2 and Table 3 list all defects found in the current 
+navify Clinical Hub (nCH) 
+1.2.0
+ and previous releases that are accepted to still remain open for the current release.  
+Table 2: Accepted Defects – risk related “yes”
+ 
+ 
+ID
+Summary
+Detected in HW SN / Build 
+Risk Reference
+Affected Requirement
+DEFECT-NCH-3667-#4
+Defect simulation (ketryx 1.2.0)
+Ketryx-1.2.0
+RISK-NCH-3657-#1
+SRQ-NCH-3666-#6
+1 issue
+Table 2 is not applicable, as Navify Clinical Hub is not classified as a medical device and therefore does not have any accepted defects associated with patient, user, or clinical risk. Refer to Hazard and Harm Record HH009 for documentation.
+Table 3: Accepted Defects – risk related “no” 
+ID
+Summary
+Detected in HW SN / Build
+Affected Requirement
+DEFECT-NCH-3627-#18
+TEST
+Ketryx-1.2.0
+DEFECT-NCH-3639-#9
+Test Defect
+Ketryx- 1.1.1
+DEFECT-OSC-5106-#2
+Test defect - accepted w/o resolution
+Ketryx-OSC-1.2.0
+3 issues
+     
+Resolved Defects
+Table 4 lists all reported defects that have been successfully verified and confirmed to be resolved. 
+ 
+ID
+Summary
+Detected in HW SN / Build
+Verification/ Validation Reference
+DEFECT-NCH-3617-#23
+Test defect 1.1.0
+Ketryx-1.1.0
+DEFECT-MDT-912-#11
+Sometimes translation keys are visible on Summary
+None
+DEFECT-MDT-3736-#12
+Issue found during testing - error while getting a meeting
+None
+DEFECT-MDT-3737-#11
+File not supported when selecting reports in the presentation view
+None
+DEFECT-MDT-3743-#12
+Patient summary not visible in nCH
+None
+DEFECT-MDT-3750-#12
+Presentation Performance is slow when loading the document
+None
+DEFECT-MDT-3756-#12
+Summary Tab - Open meeting pop-out persisted across patients cause error when opening a patient that has no meetings
+None
+DEFECT-MDT-3764-#12
+Issue found during testing - all pinning is fully lost
+None
+DEFECT-MDT-3775-#12
+[Migration] When Invitee has selected checkbox in More Info in NTB, then in NCH is displayed as Additional attendee in PMM panel
+None
+DEFECT-MDT-3784-#12
+I am able to edit Conference note even when there is message of time locks
+None
+DEFECT-MDT-3804-#12
+Missing DIS_FHIR_ORGANIZATION header to generate report API call
+None
+DEFECT-MDT-3805-#12
+Patients list load more items replaces previous items
+None
+DEFECT-MDT-3806-#12
+Missing patients in conference report
+None
+DEFECT-MDT-3827-#12
+Unable to edit past meeting message shows up while editing is enabled
+None
+DEFECT-MDT-3933-#12
+Attendees not shown after migration
+None
+DEFECT-MDT-3953-#12
+CAMC (Charleston Area Med Center) Patient Summary Tumor Board Meeting Edit Error
+None
+DEFECT-MDT-3983-#11
+HdV Prod Issue: Past TBs do not show TB Summary
+None
+DEFECT-MDT-3990-#12
+Charleston Area Medical Center Prod - patient summary missing from nCH
+None
+DEFECT-MDT-3995-#11
+[FE] The presentation doesn&apos;t display all patients submitted to the meeting.
+None
+DEFECT-MDT-4160-#12
+Different Recommendations Ordering
+None
+DEFECT-MDT-4454-#12
+Maimonides - Fails to manually add TB &quot;Point of discussion note&quot; when integrated
+None
+DEFECT-MDT-4505-#12
+HdV Prod Issue (part 1): Presentation slides get superimposed
+None
+DEFECT-MDT-4526-#12
+[hyper] HdV Prod Issue (part 2): Presentation slides get superimposed
+None
+DEFECT-MDT-4748-#11
+Not possible to generate Conference Report  
+None
+DEFECT-MDT-4831-#12
+Error when trying to generate a presentation from a patient review template
+None
+DEFECT-MDT-4832-#11
+Error when generating Conference Report
+None
+DEFECT-MDT-4835-#11
+Presentation summary tab not working and zoom level
+None
+DEFECT-MDT-4836-#13
+Conference Report template does not generate a report
+None
+DEFECT-MDT-4916-#11
+Charleston Area Med Center (CAMC) STAGE - &quot;something went wrong&quot; error
+None
+DEFECT-MDT-4919-#11
+&quot;Something went wrong&quot; Error in Patient Summary -&gt; Meeting Info
+None
+DEFECT-MDT-4921-#11
+&quot;Something went wrong&quot; Error in Presentation -&gt; Patient Summary
+None
+DEFECT-MDT-5943-#11
+INC14036053 - [Clinical Hub]: When adding a patient to a Tumor Board meeting, the patient review is not copied correctly. 
+None
+DEFECT-MDT-6153-#12
+INC14236593  nCH - upcoming TBs display issue
+None
+DEFECT-MDT-6208-#11
+Maimonides - unable to edit meeting dates
+None
+DEFECT-MDT-6263-#12
+Anonymize the data in Confirmation disclaimer as well as on the List of Patients 
+None
+DEFECT-MDT-6264-#12
+QAINT: Send To EMR discrepancy in nTB and nCH
+None
+DEFECT-MDT-6265-#12
+Error during add report in presentation mode - report from integration without extension
+None
+DEFECT-MDT-6297-#14
+Northside: DOB on TB meeting agenda is off by one day. (and verified at other prod customers)
+None
+DEFECT-MDT-6316-#12
+Northside (hypercare issue) unable to save new recommendations due to invalid values
+None
+DEFECT-MDT-6320-#12
+Japanese, korean, non-english characters in text file not being shown correctly in text viewer. 
+None
+DEFECT-MDT-6321-#12
+Files not being loaded after regenerate summary
+None
+DEFECT-MDT-6379-#12
+Date Selection not working for DD/MM/YY
+None
+DEFECT-MDT-6411-#12
+[GN] Opening presentation in nCH using new tab button doesn&apos;t work
+None
+DEFECT-MDT-6413-#12
+Northside - user having issue downloading a patient case report
+None
+DEFECT-MDT-6430-#12
+Issue found during testing in PROD - patient report not working for certain patients
+None
+DEFECT-MDT-6438-#12
+CMCVCT Supporting Documents issue in presentation mode
+None
+DEFECT-MDT-6469-#12
+CMCVCT Supporting Documents issue in presentation mode - part2
+None
+DEFECT-MDT-6474-#12
+When a single multibyte character is entered into the &quot;Tumor board summary&quot; text field and the &quot;Enter&quot; key is pressed, the same character is entered twice.
+None
+DEFECT-MDT-6475-#12
+Primary cancer not showing on patient conference list 
+None
+DEFECT-MDT-6512-#12
+[CAS-0023222160] Issue found in Prod - Patient appointment not created at Sant&apos;Andrea
+None
+TC-MDT-6515-#9
+DEFECT-OSC-1781-#3
+Auto Abstraction is not happening on QAINT, TBUPGR
+None
+DEFECT-OSC-2443-#3
+Unable to see the feature flags/announcements in enablement tool on usstage . Organization api returns 401 and user is getting logged off
+None
+DEFECT-OSC-3313-#3
+First page of users all showing &quot;undefined&quot; in MU nOH tenant
+None
+DEFECT-OSC-3670-#3
+Issue with the authorization in NCH
+None
+DEFECT-OSC-3769-#3
+Forced logout during system activity within system set timeout
+None
+DEFECT-OSC-3775-#3
+Incorrect info &amp; Module names discrepancy on About Box page
+None
+DEFECT-OSC-3794-#3
+About box - Module names shown incorrectly
+None
+DEFECT-OSC-4059-#3
+Patient List pagination indicator is not intuitive or correct at times
+None
+DEFECT-OSC-4311-#3
+Maimonides STAGE - Search on patient name &quot;navify&quot; yields invalid results
+None
+DEFECT-OSC-4546-#3
+Session time is not extended when user works in 2nd browser card
+None
+DEFECT-OSC-4550-#3
+INC13234626 [Tumor board] - Unable to edit patient&apos;s information
+None
+DEFECT-OSC-4551-#3
+INC13256947 [Tumor board] - Unable to add one patient to TB meetings
+None
+DEFECT-OSC-4580-#3
+Abstraction Click and Abstract broken
+None
+DEFECT-OSC-4870-#3
+INC13994346 - Customer is trying to enter a diagnosis on multiple patients and save it
+None
+DEFECT-OSC-4974-#3
+EU STAGE - AOU Sant&apos;Andrea (AOUSA) - not possible to add PDF/A report received via integration to Patient Review presentation
+None
+DEFECT-OSC-5054-#3
+[REOPEN] EU STAGE - AOU Sant&apos;Andrea (AOUSA) - not possible to add PDF/A report received via integration to Patient Review presentation
+None
+DEFECT-OSC-5091-#3
+Sant-Andreas : Issue with “Communication“ resource : 29052025
+None
+DEFECT-OSC-5108-#3
+Test Defect - Resolved
+Ketryx-OSC-1.2.0
+DEFECT-NCH-3628-#21
+TEST 2 - Resolved
+Ketryx-1.0.0
+69 issues
+Rejected Defects
+Table 5 list all initially reported defects that have been identified to be invalid.
+ 
+ID
+Summary
+Detected in HW SN / Build
+Rejection Justification
+DEFECT-NCH-3626-#14
+Defect found and rejected in Ketryx-1.0.0
+Ketryx-1.0.0
+Not A Bug
+DEFECT-MDT-3986-#8
+HdV Prod Issue: TB Summary for a future TB is not visible in Summary Tab 
+None
+Duplicate
+DEFECT-MDT-4149-#8
+[Blocked, unable 2 repro] HdV Prod Issue: TB card randomly not showing up in summary page (same as https://navify.atlassian.net/browse/CCO-591)
+None
+Duplicate
+DEFECT-MDT-4158-#8
+Please review (again) patient summary field for Charleston Area Medical Center
+None
+As Designed
+DEFECT-MDT-4727-#8
+Not able to Upload attachment to presentation from Patient reports tab
+None
+Duplicate
+DEFECT-MDT-4867-#8
+Pop up Error message when opening Patient Summary 
+None
+DEFECT-MDT-4915-#8
+CAMC(Charleston Area Med Center) - &apos;Something went wrong&apos; in patient chart
+None
+Duplicate
+DEFECT-MDT-4917-#8
+Tumor board summary &quot;written by&quot; displays no name
+None
+Duplicate
+DEFECT-MDT-5461-#8
+Presentation unable to load various file types
+None
+Not A Bug
+DEFECT-MDT-6432-#8
+INC14550726 NCH - Undesired characters in patient report
+None
+Declined
+DEFECT-OSC-3804-#3
+Issue found during testing: MRNs are not correct
+None
+Cannot Reproduce
+DEFECT-OSC-3862-#3
+Search by MRN is not working in some tenants
+None
+Invalid
+DEFECT-OSC-3904-#3
+When the user has only Click and Abstract access, the AI Assisted Abstraction is being triggered as well
+None
+As Designed
+DEFECT-OSC-3905-#3
+Additional Biomarkers are getting auto abstracted from Genomics Report
+None
+Won&apos;t Do
+DEFECT-OSC-5107-#4
+Test defect - Rejected
+Ketryx-OSC-1.2.0
+Won&apos;t Fix
+DEFECT-NCH-3656-#26
+Joey - Simulated Release
+Ketryx-1.1.0
+Done
+DEFECT-NCH-3635-#9
+Defect found during testing Ketryx-1.2.0 and creted outside Xray and linked after
+Ketryx-1.2.0
+Won&apos;t Fix
+DEFECT-NCH-3629-#11
+TEST 3
+None
+Won&apos;t Fix
+18 issues
+Glossary
+Refer to
+ 
+MQMS-LIB-Appendix D for additional definitions and abbreviations. 
+Table 6: Terms and definitions
+Abbreviation/ Term
+Definition
+Accepted Defect
+see MQMS-D&amp;D-GSP-05
+Resolved Defect
+see MQMS-D&amp;D-GSP-05
+Rejected Defect
+see MQMS-D&amp;D-GSP-05
+References
+Table 7: References
+Document ID
+Document Title
+DMS System
+MQMS-D&amp;D-GSP-05
+Defect Management
+DiaDoc
+MQMS-LIB-Appendix D
+Roche Diagnostics Quality System Definitions
+DiaDoc
+DD009
+Design and Development Plan
+Enzyme
+HH009
+Hazard and Harm Review
+Enzyme
+Ketryx-1.2.0
+Design Verification Test Results
+Ketryx
